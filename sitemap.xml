@@ -1,12 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://mmaxwu.github.io/cs/week%200/jupyter/2022/08/21/Hello-World.html</loc>
+<lastmod>2022-08-21T00:00:00-05:00</lastmod>
+</url>
+<url>
 <loc>https://mmaxwu.github.io/cs/week%200/jupyter/2022/08/21/Markdown-Post.html</loc>
 <lastmod>2022-08-21T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://mmaxwu.github.io/cs/week%201/jupyter/2022/08/27/AP-Physics-Fastpages.html</loc>
 <lastmod>2022-08-27T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://mmaxwu.github.io/cs/week%201/jupyter/2022/08/27/Quiz.html</loc>
+<lastmod>2022-08-27T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://mmaxwu.github.io/cs/week%201/jupyter/2022/08/28/bash-tool-checks.html</loc>
+<lastmod>2022-08-28T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://mmaxwu.github.io/cs/week%202/jupyter/2022/09/02/loops.html</loc>
+<lastmod>2022-09-02T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://mmaxwu.github.io/cs/week%202/jupyter/2022/09/05/BellSchedule.html</loc>
@@ -19,6 +35,10 @@
 <url>
 <loc>https://mmaxwu.github.io/cs/week%203/jupyter/2022/09/11/AppLabQuiz.html</loc>
 <lastmod>2022-09-11T00:00:00-05:00</lastmod>
+</url>
+<url>
+<loc>https://mmaxwu.github.io/cs/2022/09/18/SortingAlgorithms.html</loc>
+<lastmod>2022-09-18T00:00:00-05:00</lastmod>
 </url>
 <url>
 <loc>https://mmaxwu.github.io/cs/about/</loc>
