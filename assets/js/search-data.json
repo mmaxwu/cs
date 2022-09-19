@@ -4,8 +4,8 @@
         "post0": {
             "title": "Sorting Algorithms",
             "content": "Bubble Sort . def bubble_sort(list): index_length = len(list) swapped = False #create variable of swapped and set it to false for i in range(index_length-1): #number of iterations for j in range(0, index_length-1): #for every value between the first value and second to last value if list[j] &gt; list[j+1]: swapped = True #values are swapped list[j], list[j+1] = list[j+1], list[j] #switch positions return list list = [64, 34, 25, 12, 22, 11, 90] bubble_sort(list) print(list) . [11, 12, 22, 25, 34, 64, 90] . Selection Sort . def selection_sort(list): indexing_length = len(list) for i in range(indexing_length - 1): #the number of iterations minpos = i #whatever before i is sorted, whatever after i is unsorted; i is the min position for j in range(i, indexing_length): #for every value between i and the last value if list[j] &lt; list[minpos]: minpos = j #set j as the new minpos if j is less than i list[minpos], list[i] = list[i], list[minpos] #switch positions return list list = [64, 34, 25, 12, 22, 11, 90] selection_sort(list) print(list) . [11, 12, 22, 25, 34, 64, 90] .",
-            "url": "https://mmaxwu.github.io/cs/2022/09/18/SortingAlgorithms.html",
-            "relUrl": "/2022/09/18/SortingAlgorithms.html",
+            "url": "https://mmaxwu.github.io/cs/week%204/jupyter/2022/09/18/SortingAlgorithms.html",
+            "relUrl": "/week%204/jupyter/2022/09/18/SortingAlgorithms.html",
             "date": " • Sep 18, 2022"
         }
         
