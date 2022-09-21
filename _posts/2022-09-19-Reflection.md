@@ -23,11 +23,250 @@ layout: notebook
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Hi my name is Max. This is my page to document my journey through CSP. My computer science journey truly started in 8th grade. There were many electives to choose going into the 8th grade, I ended up choosing computer science because that's what all my friends are taking. Having no previous experience in any computer science, I naturally struggled throughout the year. But with pain often comes joy. I remember creating my first website using html, spending hours trying to improve every little detail to make my website more appealing. Submitting the website was one of the happiest moments of my life. That feeling of accomplishment and completion is what prompted me to enroll in this class. Having never touched a line of code in three years, it is not surprising to say that I am really rusty.</p>
+<p>Hi my name is Max. This is my page to document my journey through CSP. My computer science journey truly started in 8th grade. There were many electives to choose going into the 8th grade, I ended up choosing computer science because that was the class that all of my friends were planning on taking. Having no previous experience in computer science, I naturally struggled throughout the year. But with pain often comes joy. I remember creating my first website using html, spending hours trying to improve every little detail to make my website more appealing. Submitting the website was one of the happiest moments of my life. That feeling of accomplishment is what motivated me to enroll in this class. Having never touched a line of code in three years, it is not surprising to say that I am really rusty.</p>
 
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Iterations">Iterations<a class="anchor-link" href="#Iterations"> </a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The first thing I learned in Mr. Mortensen's CSP class is iterations or loops. Iteration is a sequence of instructions that is continually repeated. With iteration, I made a cool little quiz.</p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">q_and_a</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Question: &quot;</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">msg</span>
+    
+<span class="n">questions</span> <span class="o">=</span> <span class="mi">6</span>
+<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Hello, you will be taking the vocabulary test.&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Do you wish to proceed?(y/n)&quot;</span><span class="p">)</span>
+
+<span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="n">msg</span><span class="o">!=</span><span class="s2">&quot;y&quot;</span><span class="p">)</span> <span class="p">:</span>  
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;ERROR, YOU HAVE TO SAY YES, DON&#39;T HAVE A CHOICE&quot;</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+  
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;You may now proceed&quot;</span><span class="p">)</span>
+      
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">q_and_a</span><span class="p">(</span><span class="s2">&quot;Does static text change? (yes/no)&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;no&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span><span class="s2">&quot; is correct&quot;</span><span class="p">)</span>
+    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span><span class="s2">&quot; is wrong :(&quot;</span><span class="p">)</span>
+    
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">q_and_a</span><span class="p">(</span><span class="s2">&quot;At least how many lines are required to form a sequence of code?(1-4)&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;2&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct!&quot;</span><span class="p">)</span>
+    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect!&quot;</span><span class="p">)</span>
+
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">q_and_a</span><span class="p">(</span><span class="s2">&quot;Is Input and Output in jupyter notebooks in line with Output?(yes/no)&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;no&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct!!&quot;</span><span class="p">)</span>
+    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect!&quot;</span><span class="p">)</span>
+
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">q_and_a</span><span class="p">(</span><span class="s2">&quot;Is the computer mice an input?(yes/no)&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;yes&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct!!&quot;</span><span class="p">)</span>
+    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect!&quot;</span><span class="p">)</span>
+    
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">q_and_a</span><span class="p">(</span><span class="s2">&quot;What is a number with a decimal in it called?&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;float&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct!!&quot;</span><span class="p">)</span>
+    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect!&quot;</span><span class="p">)</span>
+    
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">q_and_a</span><span class="p">(</span><span class="s2">&quot;What is a set of instructions that a computer follows in order to complete a task called?&quot;</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">&quot;program&quot;</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is correct!!&quot;</span><span class="p">)</span>
+    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">&quot; is incorrect!&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot; you scored &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span><span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello, you will be taking the vocabulary test.
+Do you wish to proceed?(y/n)
+You may now proceed
+Question: Does static text change? (yes/no)
+n is wrong :(
+Question: At least how many lines are required to form a sequence of code?(1-4)
+2 is correct!
+Question: Is Input and Output in jupyter notebooks in line with Output?(yes/no)
+no is correct!!
+Question: Is the computer mice an input?(yes/no)
+yes is correct!!
+Question: What is a number with a decimal in it called?
+float is correct!!
+Question: What is a set of instructions that a computer follows in order to complete a task called?
+code is incorrect!
+ you scored 4/6
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Sorting-Algorithms">Sorting Algorithms<a class="anchor-link" href="#Sorting-Algorithms"> </a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We haven't learned this yet, but I wanted to challenge myself with a mini project so I decided to write some algorithms for the different sorting methods.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Bubble-Sort">Bubble Sort<a class="anchor-link" href="#Bubble-Sort"> </a></h3>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">bubble_sort</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span>
+    <span class="n">index_length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+    <span class="n">swapped</span> <span class="o">=</span> <span class="kc">False</span> <span class="c1">#create variable of swapped and set it to false</span>
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">index_length</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span> <span class="c1">#number of iterations</span>
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">index_length</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span> <span class="c1">#for every value between the first value and second to last value</span>
+            <span class="k">if</span> <span class="nb">list</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&gt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]:</span>
+                <span class="n">swapped</span> <span class="o">=</span> <span class="kc">True</span> <span class="c1">#values are swapped</span>
+                <span class="nb">list</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="nb">list</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">],</span> <span class="nb">list</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="c1">#switch positions</span>
+    <span class="k">return</span> <span class="nb">list</span>
+
+
+<span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">64</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">90</span><span class="p">]</span>
+<span class="n">bubble_sort</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[11, 12, 22, 25, 34, 64, 90]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Selection-Sort">Selection Sort<a class="anchor-link" href="#Selection-Sort"> </a></h3>
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">selection_sort</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span>
+    <span class="n">indexing_length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+    
+    
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">indexing_length</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span> <span class="c1">#the number of iterations</span>
+        <span class="n">minpos</span> <span class="o">=</span> <span class="n">i</span> <span class="c1">#whatever before i is sorted, whatever after i is unsorted; i is the min position</span>
+        
+        <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">indexing_length</span><span class="p">):</span> <span class="c1">#for every value between i and the last value</span>
+             <span class="k">if</span> <span class="nb">list</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">&lt;</span> <span class="nb">list</span><span class="p">[</span><span class="n">minpos</span><span class="p">]:</span> 
+                <span class="n">minpos</span> <span class="o">=</span> <span class="n">j</span> <span class="c1">#set j as the new minpos if j is less than i</span>
+
+        <span class="nb">list</span><span class="p">[</span><span class="n">minpos</span><span class="p">],</span> <span class="nb">list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">list</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="nb">list</span><span class="p">[</span><span class="n">minpos</span><span class="p">]</span> <span class="c1">#switch positions</span>
+        
+    <span class="k">return</span> <span class="nb">list</span>
+
+
+<span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">64</span><span class="p">,</span> <span class="mi">34</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">11</span><span class="p">,</span> <span class="mi">90</span><span class="p">]</span>
+<span class="n">selection_sort</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[11, 12, 22, 25, 34, 64, 90]
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
 </div>
  
 
