@@ -10,15 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Max is a student attending Del Norte High School" />
 <meta property="og:description" content="Max is a student attending Del Norte High School" />
-<link rel="canonical" href="https://mmaxwu.github.io/cs/2022/09/25/JavascriptTable.html" />
-<meta property="og:url" content="https://mmaxwu.github.io/cs/2022/09/25/JavascriptTable.html" />
+<link rel="canonical" href="https://mmaxwu.github.io/cs/week%205/jupyter/2022/09/25/JavascriptTable.html" />
+<meta property="og:url" content="https://mmaxwu.github.io/cs/week%205/jupyter/2022/09/25/JavascriptTable.html" />
 <meta property="og:site_name" content="Max Wu" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-09-25T00:00:00-05:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Javascript Table" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-25T00:00:00-05:00","datePublished":"2022-09-25T00:00:00-05:00","description":"Max is a student attending Del Norte High School","headline":"Javascript Table","mainEntityOfPage":{"@type":"WebPage","@id":"https://mmaxwu.github.io/cs/2022/09/25/JavascriptTable.html"},"url":"https://mmaxwu.github.io/cs/2022/09/25/JavascriptTable.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-09-25T00:00:00-05:00","datePublished":"2022-09-25T00:00:00-05:00","description":"Max is a student attending Del Norte High School","headline":"Javascript Table","mainEntityOfPage":{"@type":"WebPage","@id":"https://mmaxwu.github.io/cs/week%205/jupyter/2022/09/25/JavascriptTable.html"},"url":"https://mmaxwu.github.io/cs/week%205/jupyter/2022/09/25/JavascriptTable.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/cs/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://mmaxwu.github.io/cs/feed.xml" title="Max Wu" /><link rel="shortcut icon" type="image/x-icon" href="/cs/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -83,6 +83,16 @@ window.onload = wrap_img;
     
 </span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/cs/categories/#Week 5">Week 5</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/cs/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
     
 
     
@@ -150,9 +160,9 @@ window.onload = wrap_img;
 
 <span class="c1">//Make new data and put in a list</span>
 <span class="kd">var</span> <span class="nx">Max</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Data</span><span class="p">(</span><span class="s2">&quot;Max&quot;</span><span class="p">,</span> <span class="s2">&quot;https://github.com/mmaxwu/cs&quot;</span><span class="p">,</span> <span class="s2">&quot;https://mmaxwu.github.io/cs/&quot;</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">Nathan</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Data</span><span class="p">(</span><span class="s2">&quot;Nathan&quot;</span><span class="p">,</span> <span class="s2">&quot;https://github.com/Orlando-c&quot;</span><span class="p">,</span> <span class="s2">&quot;https://orlando-c.github.io/que-pro/&quot;</span><span class="p">);</span>
-<span class="kd">var</span> <span class="nx">Sri</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Data</span><span class="p">(</span><span class="s2">&quot;Sri&quot;</span><span class="p">,</span> <span class="s2">&quot;https://github.com/dolphinalt/APCSP-Fastpages&quot;</span><span class="p">,</span> <span class="s2">&quot;https://github.com/dolphinalt/APCSP-Fastpages&quot;</span><span class="p">)</span>
-<span class="kd">var</span> <span class="nx">Alyssa</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Data</span><span class="p">(</span><span class="s2">&quot;Alyssa&quot;</span><span class="p">,</span> <span class="s2">&quot;https://raisinbran25.github.io/csp2/&quot;</span><span class="p">,</span> <span class="s2">&quot;https://github.com/raisinbran25/csp2&quot;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">Nathan</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Data</span><span class="p">(</span><span class="s2">&quot;Nathan&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">Sri</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Data</span><span class="p">(</span><span class="s2">&quot;Sri&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+<span class="kd">var</span> <span class="nx">Alyssa</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Data</span><span class="p">(</span><span class="s2">&quot;Alyssa&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
 <span class="nx">allData</span> <span class="o">=</span> <span class="p">[</span><span class="nx">Max</span><span class="p">,</span> <span class="nx">Nathan</span><span class="p">,</span> <span class="nx">Sri</span><span class="p">,</span> <span class="nx">Alyssa</span><span class="p">];</span>
 
 <span class="c1">//Make a object to hold the data</span>
@@ -213,7 +223,7 @@ window.onload = wrap_img;
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div style="display:inline-block;border: 2px solid grey;box-shadow: 0.8em 0.4em 0.4em grey;"><table><tr><th><mark>Name</mark></th><th><mark>GitHub</mark></th><th><mark>Fastpages</mark></th></tr><tr><td>Max<td>Max's Github: https://github.com/mmaxwu/cs</td><td>Max's Fastpages: https://mmaxwu.github.io/cs/</td><tr><tr><td>Nathan<td>Nathan's Github: https://github.com/Orlando-c</td><td>Nathan's Fastpages: https://orlando-c.github.io/que-pro/</td><tr><tr><td>Sri<td>Sri's Github: https://github.com/dolphinalt/APCSP-Fastpages</td><td>Sri's Fastpages: https://github.com/dolphinalt/APCSP-Fastpages</td><tr><tr><td>Alyssa<td>Alyssa's Github: https://raisinbran25.github.io/csp2/</td><td>Alyssa's Fastpages: https://github.com/raisinbran25/csp2</td><tr>&lt;/table&gt;&lt;/div&gt;
+<div style="display:inline-block;border: 2px solid grey;box-shadow: 0.8em 0.4em 0.4em grey;"><table><tr><th><mark>Name</mark></th><th><mark>GitHub</mark></th><th><mark>Fastpages</mark></th></tr><tr><td>Max<td>Max's Github: https://github.com/mmaxwu/cs</td><td>Max's Fastpages: https://mmaxwu.github.io/cs/</td><tr><tr><td>Nathan<td>Nathan's Github: </td><td>Nathan's Fastpages: </td><tr><tr><td>Sri<td>Sri's Github: </td><td>Sri's Fastpages: </td><tr><tr><td>Alyssa<td>Alyssa's Github: </td><td>Alyssa's Fastpages: </td><tr>&lt;/table&gt;&lt;/div&gt;
 &lt;/div&gt;
 
 &lt;/div&gt;
@@ -230,7 +240,7 @@ window.onload = wrap_img;
 </tr></td></tr></tr></td></tr></tr></td></tr></tr></td></tr></table></div></div></div></div></div></div></div>
 
 
-  </div><a class="u-url" href="/cs/2022/09/25/JavascriptTable.html" hidden></a>
+  </div><a class="u-url" href="/cs/week%205/jupyter/2022/09/25/JavascriptTable.html" hidden></a>
 </article>
 
       </div>
