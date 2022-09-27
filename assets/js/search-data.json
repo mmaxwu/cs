@@ -161,6 +161,17 @@
   
 
   
+      ,"page3": {
+          "title": "About Me",
+          "content": "Basics w/ table | Personal Use | .",
+          "url": "https://mmaxwu.github.io/cs/about/",
+          "relUrl": "/about/",
+          "date": ""
+      }
+      
+  
+
+  
   
 
   
@@ -171,7 +182,7 @@
   
 
   
-      ,"page7": {
+      ,"page8": {
           "title": "Vocab",
           "content": "If statement - If proved true, performs a function . Variable - A value that can change depending on the conditions . console.log - command or function for javascript . Static text, as it doesn&#39;t change - A string literal; ex: &quot;Hello, World&quot; . Sequence of code - Two or more lines forms a sequence . Definition of a function - Allows for a collection of data . Definition of a prototype - Allows for the definition of a method associated with the function .",
           "url": "https://mmaxwu.github.io/cs/vocab/",
@@ -191,7 +202,7 @@
   
 
   
-      ,"page11": {
+      ,"page12": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://mmaxwu.github.io/cs/robots.txt",
