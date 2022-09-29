@@ -17,3 +17,7 @@ permalink: /vocab/
 <p> <mark>Definition of a function</mark> - Allows for a collection of data</p>
 
 <p> <mark>Definition of a prototype</mark> - Allows for the definition of a method associated with the function</p>
+
+<p> <mark>Firewall</mark> - ?</p>
+
+<p> <mark>http traffic</mark> - ?</p>
