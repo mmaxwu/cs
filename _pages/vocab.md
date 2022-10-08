@@ -21,3 +21,5 @@ permalink: /vocab/
 <p> <mark>Firewall</mark> - ?</p>
 
 <p> <mark>http traffic</mark> - ?</p>
+
+<p> <mark>API</mark> - Allows many opportunities in data science</p>
