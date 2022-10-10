@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Javascript
-permalink: /javascript/
+title: API
+permalink: /API/
 ---
 
 <table>
     <tr>
-        <td><a href="https://mmaxwu.github.io/cs/week%205/jupyter/2022/09/25/JavascriptTable.html"> Table</a></td>
-        <td><a href="https://mmaxwu.github.io/cs/week%205/jupyter/2022/09/25/JavascriptSortingAlgorithms.html"> Sorting Algorithms</a></td>
+        <td><a href="https://mmaxwu.github.io/cs/week%205/jupyter/2022/10/03/PBL-python_rapidapi-copy.html"> COVID19</a></td>
+        <td><a href="https://mmaxwu.github.io/cs/2022/10/08/API.html"> Weather</a></td>
     </tr>
 </table>
