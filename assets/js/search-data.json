@@ -204,10 +204,10 @@
 
   
       ,"page2": {
-          "title": "Javascript",
-          "content": "Table | Sorting Algorithms | .",
-          "url": "https://mmaxwu.github.io/cs/javascript/",
-          "relUrl": "/javascript/",
+          "title": "API",
+          "content": "COVID19 | Weather | .",
+          "url": "https://mmaxwu.github.io/cs/API/",
+          "relUrl": "/API/",
           "date": ""
       }
       
