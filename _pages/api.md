@@ -1,3 +1,8 @@
+---
+layout: page
+title: API
+permalink: /api/overview
+---
 
 <table>
     <tr>
