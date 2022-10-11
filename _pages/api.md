@@ -3,7 +3,7 @@ layout: page
 title: API
 permalink: /API/
 ---
-{% include nav_frontend.html %}
+{% include nav_data.html %}
 
 <table>
     <tr>
