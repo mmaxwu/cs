@@ -4,10 +4,7 @@ title: API
 permalink: /api/overview
 ---
 
-<table>
-    <tr>
-        <td><a href="{{site.baseurl}}/api/COVID19"> COVID19</a></td>
-        <td><a href="{{site.baseurl}}/api/weather"> Weather</a></td>
-    </tr>
-</table>
+{% include nav_data.html %}
+
+
 
