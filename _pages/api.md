@@ -3,6 +3,7 @@ layout: page
 title: API
 permalink: /API/
 ---
+{% include nav_frontend.html %}
 
 <table>
     <tr>
@@ -10,3 +11,4 @@ permalink: /API/
         <td><a href="https://mmaxwu.github.io/cs/2022/10/08/API.html"> Weather</a></td>
     </tr>
 </table>
+
