@@ -114,4 +114,8 @@ How to collaborate in class?
     - At the beginning: list specifications
     - During: to keep track of process
     - After: to explain the overall process
+
+## 1.4
+<mark>Errors in an algorithm program</mark>
+
   
