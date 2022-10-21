@@ -119,3 +119,6 @@ How to collaborate in class?
 <mark>Errors in an algorithm program</mark>
 
   
+## 4.1
+<mark>How do computing devices work together in a network?</mark>
+- Computers were once big. They grew smaller and smaller as time evolved. 
