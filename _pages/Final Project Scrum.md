@@ -10,6 +10,8 @@ permalink: /scrum/
 <mark>Devops:</mark> Working on the user interface of the website, and ensuring vscode git process and aws are working properly; working on 1 game<br>
 
 ## Scrum Board
+
+
 | To-do|Doing |Done |
 |----|---|---|
 | Creating 4 games  | Tetris game   | None |
