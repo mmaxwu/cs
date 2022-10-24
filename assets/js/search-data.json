@@ -205,7 +205,7 @@
   
       ,"page2": {
           "title": "Final Project Scrum Board",
-          "content": "Scrum . Scrum Board . |To-do |Doing|Done| |————|———-|——–| |Creating 4 games |Tetris game |None| |Leaderboard API |Pong game with different levels |…| |…|User menu of pong game; directs user to different levels of pong game |…| |…|PVP mode of pong game |…| |…|Creation of 2 more games |…| . Roles . Scrum Master: Planning and working on pong Frontend developer: Working on tetris and 1 other game Backend developer: Creating an API and working on tetris along with the frontend developer Devops: Working on the user interface of the website, and ensuring vscode git process and aws are working properly; working on 1 game .",
+          "content": "Scrum Board . |To-do |Doing|Done| |————|———-|——–| |Creating 4 games |Tetris game |None| |Leaderboard API |Pong game with different levels |…| |… |User menu of pong game; directs user to different levels of pong game |…| |… |PVP mode of pong game |…| |… |Creation of 2 more games |…| . Roles . Scrum Master: Planning and working on pong Frontend developer: Working on tetris and 1 other game Backend developer: Creating an API and working on tetris along with the frontend developer Devops: Working on the user interface of the website, and ensuring vscode git process and aws are working properly; working on 1 game .",
           "url": "https://mmaxwu.github.io/cs/scrum/",
           "relUrl": "/scrum/",
           "date": ""
