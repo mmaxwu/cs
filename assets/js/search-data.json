@@ -13,7 +13,7 @@
   
     
         ,"post1": {
-            "title": "Weather API",
+            "title": "Personal API",
             "content": "| Overview | Weather | COVID19 | . . import requests api_key = &#39;30d4741c779ba94c470ca1f63045390a&#39; user_input = input(&quot;Enter city: &quot;) weather_data = requests.get( f&quot;https://api.openweathermap.org/data/2.5/weather?q={user_input}&amp;units=imperial&amp;APPID={api_key}&quot;) if weather_data.json()[&#39;cod&#39;] == &#39;404&#39;: print(&quot;No City Found&quot;) else: weather = weather_data.json()[&#39;weather&#39;][0][&#39;main&#39;] temp = round(weather_data.json()[&#39;main&#39;][&#39;temp&#39;]) print(f&quot;The weather in {user_input} is: {weather}&quot;) print(f&quot;The temperature in {user_input} is: {temp}ºF&quot;) . No City Found .",
             "url": "https://mmaxwu.github.io/cs/api/weather",
             "relUrl": "/api/weather",
