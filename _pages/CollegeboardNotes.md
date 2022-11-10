@@ -131,7 +131,7 @@ How to collaborate in class?
 - A bandwidth is the maximum amount of data that can be sent in a fixed amount of time on a computer network
 
 ## 4.2
-<img src="application layer.jpg" alt="...">
+<img src="images/../../applicationlayer.png">
   
 # Final MC
-Even though I didn't make too many mistakes on the test, I had a few uncertain questions that I would like to delve deeper into. 
+Even though I didn't make too many mistakes on the test, I had a few uncertain questions that I would like to delve deeper into. The first topic that I wasn't too clear about is 
