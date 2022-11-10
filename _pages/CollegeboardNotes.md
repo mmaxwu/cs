@@ -140,7 +140,7 @@ Even though I didn't make too many mistakes on the test, I had a few uncertain q
 <img src="images/../../internet.png">
 From this question, I concluded that I really just needed to memorize that information, even though it is not particularly useful for the CSP class. 
 </p>
----
+
 <p>
 The next topic that I needed to focus on is binary. Previous to the final exam, I only had a brief idea of what binary is and mainly guessed the answers for the test. After the test, I located the binary video from collegeboard, and took notes on it, now I am a lot clear on binary questions. 
 </p>
@@ -154,3 +154,9 @@ Before solving this problem, I mainly just guessed, but after watching the colle
 Another type of problem that I struggled with is value swapping. 
 <img src="images/../../valueswap.png">
 The important thing about value swapping is setting a temporary variable for what you want to swap. For example, if you want to swap num1 and num2, you would assign a temp value to num1 first, then assign the value of num2 to num1, and then lastly assign the original value of num1, which is stored in temp, to num2. The original values of num1 to num2 are now interchanged
+</p>
+
+<p>
+Something else that I had issues with is the vocabulary.
+<img src="images/../../vocab.png">
+I had difficulty distinguishing between "all other", "subsequent", "immediately follows", and "immediately precedes". I guessed that the choice is "subsequent" because immediately follows and immediately precedes is similar in definition, and the answer is definitely not all other, so I chose the last option left.Later on, I went back to the problem to find an explanation why the correct choice is "subsequent", and that is because the outer loop iterates from the first element in the list to the second-to-last element in the list. For each iteration of the outer loop, the inner loop compares that element to every subsequent element in the array. 
