@@ -169,3 +169,5 @@ The important thing about value swapping is setting a temporary variable for wha
 Something else that I had issues with is the vocabulary.
 <img src="images/../../vocab.png">
 I had difficulty distinguishing between "all other", "subsequent", "immediately follows", and "immediately precedes". I guessed that the choice is "subsequent" because immediately follows and immediately precedes is similar in definition, and the answer is definitely not all other, so I chose the last option left.Later on, I went back to the problem to find an explanation why the correct choice is "subsequent", and that is because the outer loop iterates from the first element in the list to the second-to-last element in the list. For each iteration of the outer loop, the inner loop compares that element to every subsequent element in the array. 
+
+<img src="images/../../finalscore.png">
