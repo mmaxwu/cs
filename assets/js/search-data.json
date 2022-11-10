@@ -204,17 +204,6 @@
 
   
       ,"page2": {
-          "title": "Final Project Scrum Board",
-          "content": "Roles . Scrum Master: Planning and working on pong Frontend developer: Working on tetris and 1 other game Backend developer: Creating an API and working on tetris along with the frontend developer Devops: Working on the user interface of the website, and ensuring vscode git process and aws are working properly; working on 1 game . Scrum Board . To-do Doing Done . Creating 4 games | Tetris game | None | . Leaderboard API | Pong game with different levels | … | . … | User menu of pong game; directs user to different levels of pong game | … | . … | PVP mode of pong game | … | . … | Creation of 2 more games | … | .",
-          "url": "https://mmaxwu.github.io/cs/scrum/",
-          "relUrl": "/scrum/",
-          "date": ""
-      }
-      
-  
-
-  
-      ,"page3": {
           "title": "About Me",
           "content": "Max is a Junior at Del Norte High School. . . You can find him at: . Instagram: Max Wu | Discord: lil wuzi vert #3917 | . . . .",
           "url": "https://mmaxwu.github.io/cs/about/",
@@ -225,7 +214,7 @@
   
 
   
-      ,"page4": {
+      ,"page3": {
           "title": "API",
           "content": "| Overview | Weather | COVID19 | .",
           "url": "https://mmaxwu.github.io/cs/api/overview",
@@ -238,7 +227,7 @@
   
 
   
-      ,"page6": {
+      ,"page5": {
           "title": "Javascript",
           "content": "Table | Sorting Algorithms | .",
           "url": "https://mmaxwu.github.io/cs/javascript/",
@@ -259,7 +248,7 @@
   
 
   
-      ,"page11": {
+      ,"page10": {
           "title": "Vocab",
           "content": "If statement - If proved true, performs a function . Variable - A value that can change depending on the conditions . console.log - command or function for javascript . Static text, as it doesn&#39;t change - A string literal; ex: &quot;Hello, World&quot; . Sequence of code - Two or more lines forms a sequence . Definition of a function - Allows for a collection of data . Definition of a prototype - Allows for the definition of a method associated with the function . Firewall - ? . http traffic - ? . API - Allows many opportunities in data science .",
           "url": "https://mmaxwu.github.io/cs/vocab/",
@@ -281,7 +270,7 @@
   
 
   
-      ,"page16": {
+      ,"page15": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://mmaxwu.github.io/cs/robots.txt",
