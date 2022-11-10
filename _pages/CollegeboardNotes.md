@@ -122,3 +122,15 @@ How to collaborate in class?
 ## 4.1
 <mark>How do computing devices work together in a network?</mark>
 - Computers were once big. They grew smaller and smaller as time evolved. 
+- Computers (their users) wanted to talk
+  - Computers are capable of sending and receiving data
+    - A packet is a small amount of data sent over a network. Each packet also includes the source and the destination information
+- So how do we get computer to connect and communicate?
+  - A computer network is a group of interconnected computing devices capable of sending or receiving data
+  - A computer system is a group of computing devices and programs working together for a joint purpose
+- A bandwidth is the maximum amount of data that can be sent in a fixed amount of time on a computer network
+
+## 4.2
+<img src="/images/application layer.png">
+  
+# Final MC
