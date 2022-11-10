@@ -132,7 +132,16 @@ How to collaborate in class?
 
 ## 4.2
 <img src="images/../../applicationlayer.png">
-  
+
+## 2.1
+<mark>Binary Numbers</mark>
+- Binary is a number system that uses two digits
+  - 1 is on
+  - 0 is off
+- Binary digit (bit) is the smallest unit of data in computing
+- Byte is a group of 8 bits
+- Analog: a mechanism, device, or technology that represents data by measurement of a continuous physical variable
+- The use of digital data to approximate real world analog data is an example of abstraction
 # Final MC
 Even though I didn't make too many mistakes on the test, I had a few uncertain questions that I would like to delve deeper into. The first topic that I wasn't too clear about is the internet. 
 
