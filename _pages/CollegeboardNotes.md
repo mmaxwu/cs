@@ -145,6 +145,11 @@ How to collaborate in class?
 # Final MC
 Even though I didn't make too many mistakes on the test, I had a few uncertain questions that I would like to delve deeper into. The first topic that I wasn't too clear about is the internet. 
 
+## 3.17 
+<mark>Algorithmic Efficiency</mark>
+- an estimation of the amount of computational resources used by an algorithm; this can be determined through formal or mathematical reasoning; an informal estimation can be completed by determining the number of times a statement or group of statement executes
+- 
+
 <p>
 <img src="images/../../internet.png">
 From this question, I concluded that I really just needed to memorize that information, even though it is not particularly useful for the CSP class. 

@@ -23,3 +23,5 @@ permalink: /vocab/
 <p> <mark>http traffic</mark> - ?</p>
 
 <p> <mark>API</mark> - Allows many opportunities in data science</p>
+
+<p> <mark>Metadata</mark> - Data about the data   ex. front matter</p>
