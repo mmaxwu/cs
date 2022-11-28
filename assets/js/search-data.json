@@ -2,10 +2,10 @@
   
     
         "post0": {
-            "title": "Unit3 1&2",
+            "title": "Variables, Assignment, and Data Abstraction Notes",
             "content": "Variables, Assignment, and Data Abstraction Notes . Variable . What is a variable? a variable is an abstraction inside a program that can | . | Naming variables capitalizing helps make the variable more clear | make the variable specific enough for you to understand | no spaces | . | . Data . The different types of data Integer: A number | Text/string: A word | Boolean: True/false | . | A list of data can be stored in variables | . Assignment . Need to watch videos about this topic, a bit unclear | . Data Abstraction . Watch vidoes on this, not too sure what data abstraction even is | Indexes start at 1 on the AP exam, unlike python | Lists are good for data abstraction | . List .",
-            "url": "https://mmaxwu.github.io/cs/2022/11/28/Unit3-1&2.html",
-            "relUrl": "/2022/11/28/Unit3-1&2.html",
+            "url": "https://mmaxwu.github.io/cs/week%2014/jupyter/2022/11/28/Unit3-1&2.html",
+            "relUrl": "/week%2014/jupyter/2022/11/28/Unit3-1&2.html",
             "date": " • Nov 28, 2022"
         }
         

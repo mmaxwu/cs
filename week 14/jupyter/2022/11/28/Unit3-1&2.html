@@ -4,23 +4,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Max Wu | Max is a student attending Del Norte High School</title>
+<title>Variables, Assignment, and Data Abstraction Notes | Max Wu</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Max Wu" />
+<meta property="og:title" content="Variables, Assignment, and Data Abstraction Notes" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Max is a student attending Del Norte High School" />
-<meta property="og:description" content="Max is a student attending Del Norte High School" />
-<link rel="canonical" href="https://mmaxwu.github.io/cs/" />
-<meta property="og:url" content="https://mmaxwu.github.io/cs/" />
+<meta name="description" content="Notes on 3.1 and 3.2" />
+<meta property="og:description" content="Notes on 3.1 and 3.2" />
+<link rel="canonical" href="https://mmaxwu.github.io/cs/week%2014/jupyter/2022/11/28/Unit3-1&2.html" />
+<meta property="og:url" content="https://mmaxwu.github.io/cs/week%2014/jupyter/2022/11/28/Unit3-1&2.html" />
 <meta property="og:site_name" content="Max Wu" />
-<meta property="og:image" content="https://mmaxwu.github.io/cs/images/logo.png" />
-<meta property="og:type" content="website" />
-<link rel="next" href="https://mmaxwu.github.io/cs/page2/" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://mmaxwu.github.io/cs/images/logo.png" />
-<meta property="twitter:title" content="Max Wu" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-11-28T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Variables, Assignment, and Data Abstraction Notes" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Max is a student attending Del Norte High School","headline":"Max Wu","image":"https://mmaxwu.github.io/cs/images/logo.png","name":"Max Wu","url":"https://mmaxwu.github.io/cs/"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-28T00:00:00-06:00","datePublished":"2022-11-28T00:00:00-06:00","description":"Notes on 3.1 and 3.2","headline":"Variables, Assignment, and Data Abstraction Notes","mainEntityOfPage":{"@type":"WebPage","@id":"https://mmaxwu.github.io/cs/week%2014/jupyter/2022/11/28/Unit3-1&2.html"},"url":"https://mmaxwu.github.io/cs/week%2014/jupyter/2022/11/28/Unit3-1&2.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/cs/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://mmaxwu.github.io/cs/feed.xml" title="Max Wu" /><link rel="shortcut icon" type="image/x-icon" href="/cs/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -72,115 +70,100 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <div class="home"><p align="center">
-    <img src="https://www.sbs.com.au/popasia/sites/sbs.com.au.popasia/files/styles/full/public/your_name_gif_feat.gif?itok=YHDUg5wi&amp;mtime=1480297060" />
-</p>
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
-<h1 id="blogs">Blogs</h1>
-
-
-
-  
-
-  <!-- Hide posts if front matter flag hide:true -->
-  
-  
-
-  <!-- Sort posts by rank, then date -->
-  
-  
-  
-
- 
-  
-
-   <!-- Assemble final sorted posts array -->
-  
-  <ul class="post-list"><li><h3>
-    <a class="post-link" href="/cs/week%2014/jupyter/2022/11/28/Unit3-1&2.html">
-    Variables, Assignment, and Data Abstraction Notes
-    </a>
-</h3><p class="post-meta-description">Notes on 3.1 and 3.2</p><p class="post-meta">Nov 28, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/cs/week%2012/jupyter/2022/11/17/xor.html">
-    Binary
-    </a>
-</h3><p class="post-meta-description">Binary to Decimal Calculator</p><p class="post-meta">Nov 17, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/cs/week%2012/jupyter/2022/11/10/N@M.html">
-    Night at the Museum
-    </a>
-</h3><p class="post-meta">Nov 10, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/cs/2022/10/11/FixingErrors.html">
-    Correcting Errors
-    </a>
-</h3><p class="post-meta">Oct 11, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/cs/api/weather">
-    Personal API
-    </a>
-</h3><p class="post-meta">Oct 8, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/cs/api/COVID19">
-    Example API
-    </a>
-</h3><p class="post-meta">Oct 3, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/cs/week%205/markdown/2022/09/29/GroupProject.html">
-    Group Planning for Project + Agile Methodology
-    </a>
-</h3><p class="post-meta">Sep 29, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/cs/week%205/jupyter/2022/09/25/JavascriptTable.html">
-    Javascript Table
-    </a>
-</h3><p class="post-meta">Sep 25, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/cs/week%205/jupyter/2022/09/25/JavascriptSortingAlgorithms.html">
-    Sorting Algorithms Using Java Script
-    </a>
-</h3><p class="post-meta">Sep 25, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/cs/week%204/jupyter/2022/09/19/Reflection.html">
-    My CSP Journey
-    </a>
-</h3><p class="post-meta">Sep 19, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/cs/week%204/jupyter/2022/09/18/SortingAlgorithms.html">
-    Sorting Algorithms
-    </a>
-</h3><p class="post-meta">Sep 18, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/cs/week%203/jupyter/2022/09/11/AppLabQuiz.html">
-    App Lab Quiz
-    </a>
-</h3><p class="post-meta">Sep 11, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/cs/week%202/jupyter/2022/09/06/table.html">
-    Notes from CSP
-    </a>
-</h3><p class="post-meta">Sep 6, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/cs/week%202/jupyter/2022/09/05/BellSchedule.html">
-    DNHS Bell Schedule(Normal)
-    </a>
-</h3><p class="post-meta">Sep 5, 2022</p>
-</li><li><h3>
-    <a class="post-link" href="/cs/week%202/jupyter/2022/09/02/loops.html">
-    Loops
-    </a>
-</h3><p class="post-meta">Sep 2, 2022</p>
-</li></ul>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Variables, Assignment, and Data Abstraction Notes</h1><p class="page-description">Notes on 3.1 and 3.2</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-11-28T00:00:00-06:00" itemprop="datePublished">
+        Nov 28, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      1 min read
+    
+</span></p>
 
     
-      <div class="pager">
-        <ul class="pagination">
-          <li><div class="pager-edge">•</div></li>
-          <li><div class="current-page">1</div></li>
-          <li><a href="/cs/page2/" class="next-page">2</a></li>
-        </ul>
-      </div></div>
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/cs/categories/#Week 14">Week 14</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/cs/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#variables-assignment-and-data-abstraction-notes">Variables, Assignment, and Data Abstraction Notes</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#variable">Variable</a></li>
+<li class="toc-entry toc-h2"><a href="#assignment">Assignment</a></li>
+<li class="toc-entry toc-h2"><a href="#data-abstraction">Data Abstraction</a></li>
+<li class="toc-entry toc-h2"><a href="#list">List</a></li>
+</ul>
+</li>
+</ul><h1 id="variables-assignment-and-data-abstraction-notes">
+<a class="anchor" href="#variables-assignment-and-data-abstraction-notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variables, Assignment, and Data Abstraction Notes</h1>
+
+<h2 id="variable">
+<a class="anchor" href="#variable" aria-hidden="true"><span class="octicon octicon-link"></span></a><mark>Variable</mark>
+</h2>
+
+<ul>
+  <li>What is a variable?
+    <ul>
+      <li>a variable is an abstraction inside a program that can</li>
+    </ul>
+  </li>
+  <li>Naming variables
+    <ul>
+      <li>capitalizing helps make the variable more clear</li>
+      <li>make the variable specific enough for you to understand</li>
+      <li>no spaces</li>
+    </ul>
+  </li>
+</ul>
+
+<p><mark>Data</mark></p>
+<ul>
+  <li>The different types of data
+    <ul>
+      <li>Integer: A number</li>
+      <li>Text/string: A word</li>
+      <li>Boolean: True/false</li>
+    </ul>
+  </li>
+  <li>A list of data can be stored in variables</li>
+</ul>
+
+<h2 id="assignment">
+<a class="anchor" href="#assignment" aria-hidden="true"><span class="octicon octicon-link"></span></a><mark>Assignment</mark>
+</h2>
+<ul>
+  <li>Need to watch videos about this topic, a bit unclear</li>
+</ul>
+
+<h2 id="data-abstraction">
+<a class="anchor" href="#data-abstraction" aria-hidden="true"><span class="octicon octicon-link"></span></a><mark>Data Abstraction</mark>
+</h2>
+<ul>
+  <li>Watch vidoes on this, not too sure what data abstraction even is</li>
+  <li>Indexes start at 1 on the AP exam, unlike python</li>
+  <li>Lists are good for data abstraction</li>
+</ul>
+
+<h2 id="list">
+<a class="anchor" href="#list" aria-hidden="true"><span class="octicon octicon-link"></span></a><mark>List</mark>
+</h2>
+
+  </div><a class="u-url" href="/cs/week%2014/jupyter/2022/11/28/Unit3-1&2.html" hidden></a>
+</article>
+
       </div>
     </main><footer class="site-footer h-card">
   <data class="u-url" href="/cs/"></data>
