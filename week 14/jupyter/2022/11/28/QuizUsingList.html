@@ -170,33 +170,33 @@ window.onload = wrap_img;
 
 <span class="k">if</span> <span class="n">question1</span> <span class="o">==</span> <span class="n">QandA</span><span class="p">[</span><span class="n">current</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
     <span class="nb">print</span> <span class="p">(</span><span class="n">question1</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
-    <span class="n">current</span> <span class="o">=</span> <span class="n">current</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="n">current</span> <span class="o">+=</span> <span class="mi">2</span>
     <span class="n">points</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">question1</span> <span class="o">+</span> <span class="s2">" is incorrect :("</span><span class="p">)</span>
-    <span class="n">current</span> <span class="o">=</span> <span class="n">current</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="n">current</span> <span class="o">+=</span> <span class="mi">2</span>
 
 <span class="n">question2</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="n">QandA</span><span class="p">[</span><span class="n">current</span><span class="p">])</span>
 
 <span class="k">if</span> <span class="n">question2</span> <span class="o">==</span> <span class="n">QandA</span><span class="p">[</span><span class="n">current</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
     <span class="nb">print</span> <span class="p">(</span><span class="n">question2</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
-    <span class="n">current</span> <span class="o">=</span> <span class="n">current</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="n">current</span> <span class="o">+=</span> <span class="mi">2</span>
     <span class="n">points</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">question2</span> <span class="o">+</span> <span class="s2">" is incorrect :("</span><span class="p">)</span>
-    <span class="n">current</span> <span class="o">=</span> <span class="n">current</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="n">current</span> <span class="o">+=</span> <span class="mi">2</span>
     
 <span class="n">question3</span> <span class="o">=</span> <span class="nb">input</span> <span class="p">(</span><span class="n">QandA</span><span class="p">[</span><span class="n">current</span><span class="p">])</span>
 
 <span class="k">if</span> <span class="n">question3</span> <span class="o">==</span> <span class="n">QandA</span><span class="p">[</span><span class="n">current</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
     <span class="nb">print</span> <span class="p">(</span><span class="n">question3</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
-    <span class="n">current</span> <span class="o">=</span> <span class="n">current</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="n">current</span> <span class="o">+=</span> <span class="mi">2</span>
     <span class="n">points</span> <span class="o">+=</span> <span class="mi">1</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">question3</span> <span class="o">+</span> <span class="s2">" is incorrect :("</span><span class="p">)</span>
-    <span class="n">current</span> <span class="o">=</span> <span class="n">current</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="n">current</span> <span class="o">+=</span> <span class="mi">2</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">" Well done, you scored "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">points</span><span class="p">)</span> <span class="o">+</span><span class="s2">"/"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Well done, you scored "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">points</span><span class="p">)</span> <span class="o">+</span><span class="s2">"/"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span>
     
 </pre></div>
 
@@ -214,7 +214,7 @@ window.onload = wrap_img;
 oxygen is correct!
 mercury is correct!
 mercury is correct!
- Well done, you scored 3/3
+Well done, you scored 3/3
 </pre>
 </div>
 </div>
@@ -259,15 +259,15 @@ mercury is correct!
 
     <span class="k">if</span> <span class="n">question</span> <span class="o">==</span> <span class="n">QandA</span><span class="p">[</span><span class="n">current</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
         <span class="nb">print</span> <span class="p">(</span><span class="n">question</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
-        <span class="n">current</span> <span class="o">=</span> <span class="n">current</span> <span class="o">+</span> <span class="mi">2</span>
+        <span class="n">current</span> <span class="o">+=</span> <span class="mi">2</span>
         <span class="n">points</span> <span class="o">+=</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">question</span> <span class="o">+</span> <span class="s2">" is incorrect :("</span><span class="p">)</span>
-        <span class="n">current</span> <span class="o">=</span> <span class="n">current</span> <span class="o">+</span> <span class="mi">2</span>
+        <span class="n">current</span> <span class="o">+=</span> <span class="mi">2</span>
     <span class="n">questions</span> <span class="o">=</span> <span class="n">questions</span> <span class="o">+</span> <span class="mi">1</span>
 
 
-<span class="nb">print</span><span class="p">(</span><span class="s2">" Well done, you scored "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">points</span><span class="p">)</span> <span class="o">+</span><span class="s2">"/"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Well done, you scored "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">points</span><span class="p">)</span> <span class="o">+</span><span class="s2">"/"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span>
     
 </pre></div>
 
@@ -285,7 +285,7 @@ mercury is correct!
 oxygen is correct!
 mercury is correct!
 mercury is correct!
- Well done, you scored 3/3
+Well done, you scored 3/3
 </pre>
 </div>
 </div>
