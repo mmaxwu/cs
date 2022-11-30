@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "String & Arithmetic Problems",
-            "content": "",
+            "content": "Hacks #1 . Num1 = 50 Num2 = Num1 % 9 + 15 Num3 = Num2 / Num1 + ( Num2 * 2 ) Num4 = Num3 + Num1 / 5 - 10 Result = Num4 - Num2 . Result = 20.4 . Num1 = 10 Num2 = Num1 % 3 * 4 Num1 = Num2 Num3 = Num1 * 3 Result = Num3 % 2 . Result = 0 . valueA = 4 valueB = 90 valueC = 17 valueB = valueC - valueA valueA = valueA * 10 if valueB &gt; 10: print(valueC) . 17 is printed . type = &quot;curly&quot; color = &quot;brown&quot; length = &quot;short&quot; type = &quot;straight&quot; hair = type + color + length print(hair) . straightbrownshort is printed . Hacks #2 . Noun = &quot;Mr.Mortenson&quot; Adjective = &quot;handsome&quot; Adjective2 = &quot;very&quot; Verb = &quot;is&quot; abrev = Noun[0:12] yoda = (abrev + &quot; &quot; + Verb + &quot; &quot; + Adjective2 + &quot; &quot; + Adjective + &quot;.&quot;) print(yoda) . Mr.Mortenson is very handsome. . cookie = &quot;Chocolate&quot; cookie2 = &quot;Rasin&quot; vote = &quot;vote&quot; len1 = len(cookie) / 2 len2 = len(cookie2) * 45 vote1 = (cookie + &quot; &quot; + vote + &quot;: &quot; + str(len1)) vote2 = (cookie2 + &quot; &quot; + vote + &quot;: &quot; + str(len2)) votes = (vote1 + &quot; &quot; + vote2) print(votes) . Chocolate vote: 4.5 Rasin vote: 225 .",
             "url": "https://mmaxwu.github.io/cs/week%2014/jupyter/2022/11/29/String&Arithmetic.html",
             "relUrl": "/week%2014/jupyter/2022/11/29/String&Arithmetic.html",
             "date": " • Nov 29, 2022"
