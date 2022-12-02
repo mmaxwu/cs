@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      3 min read
     
 </span></p>
 
@@ -154,11 +154,12 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Num1</span> <span class="o">=</span> <span class="mi">50</span>
-<span class="n">Num2</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">%</span> <span class="mi">9</span> <span class="o">+</span> <span class="mi">15</span>
-<span class="n">Num3</span> <span class="o">=</span> <span class="n">Num2</span> <span class="o">/</span> <span class="n">Num1</span> <span class="o">+</span> <span class="p">(</span> <span class="n">Num2</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">)</span>
-<span class="n">Num4</span> <span class="o">=</span> <span class="n">Num3</span> <span class="o">+</span> <span class="n">Num1</span> <span class="o">/</span> <span class="mi">5</span> <span class="o">-</span> <span class="mi">10</span>
-<span class="n">Result</span> <span class="o">=</span> <span class="n">Num4</span> <span class="o">-</span> <span class="n">Num2</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Num1</span> <span class="o">=</span> <span class="mi">50</span> 
+<span class="n">Num2</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">%</span> <span class="mi">9</span> <span class="o">+</span> <span class="mi">15</span> <span class="c1"># MOD comes before addition. 50 divided 9 is 5 remainder 5 since MOD only takes the value of the remainder, it will now be 5 + 15 which will make Num2 = 20</span>
+<span class="n">Num3</span> <span class="o">=</span> <span class="n">Num2</span> <span class="o">/</span> <span class="n">Num1</span> <span class="o">+</span> <span class="p">(</span> <span class="n">Num2</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">)</span> <span class="c1"># Parenthesis come first. Num2 equals 20. 20 times 2 equals 40. Next operation will be division. Num2, 20, divided by Num1, 50 is 0.4. Next is addition. 0.4 + 40 is 40.4. So Num3 = 40.4</span>
+<span class="n">Num4</span> <span class="o">=</span> <span class="n">Num3</span> <span class="o">+</span> <span class="n">Num1</span> <span class="o">/</span> <span class="mi">5</span> <span class="o">-</span> <span class="mi">10</span> <span class="c1"># Division comes first. Num1 equals 50, so 50 divided by 5 is 10. Next is addition and subtraction. Num3 is 40.4. 40.4 + 10 - 10 is 40.4. So Num4 = 40.4</span>
+<span class="n">Result</span> <span class="o">=</span> <span class="n">Num4</span> <span class="o">-</span> <span class="n">Num2</span> <span class="c1"># Num4 equals 40.4 and Num2 equals 20. 40.4 - 20 is 20.4. So Result = 20.4</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Result</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -184,10 +185,11 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Num1</span> <span class="o">=</span> <span class="mi">10</span>
-<span class="n">Num2</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">4</span>
-<span class="n">Num1</span> <span class="o">=</span> <span class="n">Num2</span>
-<span class="n">Num3</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">*</span> <span class="mi">3</span>
-<span class="n">Result</span> <span class="o">=</span> <span class="n">Num3</span> <span class="o">%</span> <span class="mi">2</span>
+<span class="n">Num2</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">4</span> <span class="c1"># Num1 equals 10. MOD and multiplication go from left to right. 10 divided by 3 is 3 remainder 1 since MOD only takes the value of the remainder, it will now be 1 * 4 which will make Num2 = 4</span>
+<span class="n">Num1</span> <span class="o">=</span> <span class="n">Num2</span> <span class="c1"># The value of Num2, 4, will now be the value of Num1. Num1 = 4</span>
+<span class="n">Num3</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">*</span> <span class="mi">3</span> <span class="c1"># The value of Num1 is now 4. 4 * 3 is 12. Num3 = 12</span>
+<span class="n">Result</span> <span class="o">=</span> <span class="n">Num3</span> <span class="o">%</span> <span class="mi">2</span> <span class="c1"># The value of Num3 is 12. 12 divided by 2 is 6 remainder 0. MOD only takes the value of the remainder. Result = 0</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Result</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -215,9 +217,9 @@ window.onload = wrap_img;
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">valueA</span> <span class="o">=</span> <span class="mi">4</span>
 <span class="n">valueB</span> <span class="o">=</span> <span class="mi">90</span>
 <span class="n">valueC</span> <span class="o">=</span> <span class="mi">17</span>
-<span class="n">valueB</span> <span class="o">=</span> <span class="n">valueC</span> <span class="o">-</span> <span class="n">valueA</span>
-<span class="n">valueA</span> <span class="o">=</span> <span class="n">valueA</span> <span class="o">*</span> <span class="mi">10</span>
-<span class="k">if</span> <span class="n">valueB</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+<span class="n">valueB</span> <span class="o">=</span> <span class="n">valueC</span> <span class="o">-</span> <span class="n">valueA</span> <span class="c1"># valueC = 17 and valueA = 4. 17 - 4 is 13. The result is being assigned as the new value of valueB, so valueB is now 13.</span>
+<span class="n">valueA</span> <span class="o">=</span> <span class="n">valueA</span> <span class="o">*</span> <span class="mi">10</span> <span class="c1"># valueA is 4. 4 * 10 is 40. The result is being assigned as the new value of valueA, so valueA is now 40</span>
+<span class="k">if</span> <span class="n">valueB</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span> <span class="c1"># valueB is now 13. 13 is greater than 10. So it will print valueC, which is 17.</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">valueC</span><span class="p">)</span>
 </pre></div>
 
@@ -243,11 +245,11 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span> <span class="o">=</span> <span class="s2">"curly"</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span> <span class="o">=</span> <span class="s2">"curly"</span> <span class="c1"># initial value of variable "type"</span>
 <span class="n">color</span> <span class="o">=</span> <span class="s2">"brown"</span>
 <span class="n">length</span> <span class="o">=</span> <span class="s2">"short"</span>
-<span class="nb">type</span> <span class="o">=</span> <span class="s2">"straight"</span>
-<span class="n">hair</span> <span class="o">=</span> <span class="nb">type</span> <span class="o">+</span> <span class="n">color</span> <span class="o">+</span> <span class="n">length</span>
+<span class="nb">type</span> <span class="o">=</span> <span class="s2">"straight"</span> <span class="c1"># value of variable "type" is now "straight"</span>
+<span class="n">hair</span> <span class="o">=</span> <span class="nb">type</span> <span class="o">+</span> <span class="n">color</span> <span class="o">+</span> <span class="n">length</span> <span class="c1"># the addition of these non integer values will just concatenate the variables, so print will output "straightbrownshort"</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">hair</span><span class="p">)</span>
 </pre></div>
 
@@ -319,14 +321,14 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cookie</span> <span class="o">=</span> <span class="s2">"Chocolate"</span> 
-<span class="n">cookie2</span> <span class="o">=</span> <span class="s2">"Rasin"</span> 
-<span class="n">len1</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> 
-<span class="n">len2</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">45</span> 
-<span class="n">vote1</span> <span class="o">=</span> <span class="p">(</span><span class="n">cookie</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">vote</span><span class="p">)</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len1</span><span class="p">))</span> 
-<span class="n">vote2</span> <span class="o">=</span> <span class="p">(</span><span class="n">cookie2</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">vote</span><span class="p">)</span> <span class="o">+</span> <span class="s2">": "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len2</span><span class="p">))</span> 
-<span class="n">votes</span> <span class="o">=</span> <span class="p">(</span><span class="n">vote1</span> <span class="o">+</span> <span class="s2">"    "</span> <span class="o">+</span> <span class="n">vote2</span><span class="p">)</span> 
-<span class="nb">print</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cookie</span> <span class="o">=</span> <span class="s2">"choclate"</span> <span class="c1"># 8 characters in the incorrectly spelled word "choclate"</span>
+<span class="n">cookie2</span> <span class="o">=</span> <span class="s2">"rasin"</span> <span class="c1"># 5 characters in the incorrectly spelled word "raisin"</span>
+<span class="n">len1</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="c1"># there are 8 characters in "choclate", so len(cookie) = 8. 8 divided by 2 is 4 so len1 equals 4</span>
+<span class="n">len2</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">cookie2</span><span class="p">)</span> <span class="o">*</span> <span class="mi">45</span> <span class="c1"># there are 6 characters in "rasin", so len(cookie2) = 5. 5 times 45 is 225 so len2 equals 225</span>
+<span class="n">vote1</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">cookie</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"vote"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len2</span><span class="p">)</span> <span class="c1"># I think they want to concatenate these together. The value of cookie is "choclate" and len2 is 225. So vote1 is assigned "choclatevote225" (no space in between)</span>
+<span class="n">vote2</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">cookie2</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"vote"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">len1</span><span class="p">)</span> <span class="c1"># I think they want to concatenate these together. The value of cookie2 is "rasin" and len1 is 4. So vote1 is assigned "rasinvote4" (no space in between)</span>
+<span class="n">votes</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">vote1</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">vote2</span><span class="p">)</span> <span class="c1"># concatenate vote1 and vote2 to get "choclatevote225 rasinvote4"</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">votes</span><span class="p">)</span> <span class="c1"># vote will be displayed as "choclatevote225 rasinvote4"</span>
 </pre></div>
 
     </div>
@@ -339,7 +341,7 @@ window.onload = wrap_img;
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Chocolate vote: 4.5    Rasin vote: 225
+<pre>choclatevote225 rasinvote4.0
 </pre>
 </div>
 </div>
