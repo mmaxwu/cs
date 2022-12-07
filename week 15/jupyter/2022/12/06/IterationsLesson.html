@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Unit 3 Sections 8 and 10 lesson | Max Wu</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Unit 3 Sections 8 and 10 lesson" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Max is a student attending Del Norte High School" />
+<meta property="og:description" content="Max is a student attending Del Norte High School" />
+<link rel="canonical" href="https://mmaxwu.github.io/cs/week%2015/jupyter/2022/12/06/IterationsLesson.html" />
+<meta property="og:url" content="https://mmaxwu.github.io/cs/week%2015/jupyter/2022/12/06/IterationsLesson.html" />
+<meta property="og:site_name" content="Max Wu" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-12-06T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Unit 3 Sections 8 and 10 lesson" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-06T00:00:00-06:00","datePublished":"2022-12-06T00:00:00-06:00","description":"Max is a student attending Del Norte High School","headline":"Unit 3 Sections 8 and 10 lesson","mainEntityOfPage":{"@type":"WebPage","@id":"https://mmaxwu.github.io/cs/week%2015/jupyter/2022/12/06/IterationsLesson.html"},"url":"https://mmaxwu.github.io/cs/week%2015/jupyter/2022/12/06/IterationsLesson.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/cs/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://mmaxwu.github.io/cs/feed.xml" title="Max Wu" /><link rel="shortcut icon" type="image/x-icon" href="/cs/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/cs/">Max Wu</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/cs/CollegeboardNotes/">College Board Notes</a><a class="page-link" href="/cs/about/">About Me</a><a class="page-link" href="/cs/api/overview">API</a><a class="page-link" href="/cs/javascript/">Javascript</a><a class="page-link" href="/cs/search/">Search</a><a class="page-link" href="/cs/categories/">Tags</a><a class="page-link" href="/cs/vocab/">Vocab</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Unit 3 Sections 8 and 10 lesson</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-06T00:00:00-06:00" itemprop="datePublished">
+        Dec 6, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/cs/categories/#Week 15">Week 15</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/cs/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/mmaxwu/cs/tree/master/_notebooks/2022-12-06-IterationsLesson.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/cs/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/mmaxwu/cs/master?filepath=_notebooks%2F2022-12-06-IterationsLesson.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/cs/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/mmaxwu/cs/blob/master/_notebooks/2022-12-06-IterationsLesson.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/cs/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Fmmaxwu%2Fcs%2Fblob%2Fmaster%2F_notebooks%2F2022-12-06-IterationsLesson.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/cs/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#HW-Iterations">HW Iterations </a></li>
+<li class="toc-entry toc-h2"><a href="#2D-Array">2D Array </a></li>
+<li class="toc-entry toc-h2"><a href="#Hacks">Hacks </a></li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-12-06-IterationsLesson.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sports</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"football"</span><span class="p">,</span> <span class="s2">"soccer"</span><span class="p">,</span> <span class="s2">"baseball"</span><span class="p">,</span> <span class="s2">"basketball"</span><span class="p">]</span>
+
+<span class="c1"># change the value "soccer" to "hockey"</span>
+<span class="n">sports</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s2">"soccer"</span><span class="p">)</span>
+<span class="n">sports</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s2">"hockey"</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">sports</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>['football', 'hockey', 'baseball', 'basketball']
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">sports</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"football"</span><span class="p">,</span> <span class="s2">"soccer"</span><span class="p">,</span> <span class="s2">"baseball"</span><span class="p">,</span> <span class="s2">"basketball"</span><span class="p">]</span>
+<span class="n">sports</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="s2">"golf"</span><span class="p">)</span>
+<span class="c1"># add "golf" as the 3rd element in the list</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">sports</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>['football', 'soccer', 'golf', 'baseball', 'basketball']
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="HW-Iterations">
+<a class="anchor" href="#HW-Iterations" aria-hidden="true"><span class="octicon octicon-link"></span></a>HW Iterations<a class="anchor-link" href="#HW-Iterations"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"alfa"</span><span class="p">,</span> <span class="s2">"beta"</span><span class="p">,</span> <span class="s2">"charlie"</span><span class="p">,</span> <span class="s2">"delta"</span><span class="p">,</span> <span class="s2">"echo"</span><span class="p">,</span> <span class="s2">"foxtrot"</span><span class="p">,</span> <span class="s2">"golf"</span><span class="p">,</span> <span class="s2">"hotel"</span><span class="p">,</span> <span class="s2">"india"</span><span class="p">,</span> <span class="s2">"julitt"</span><span class="p">,</span> <span class="s2">"kilo"</span><span class="p">,</span> <span class="s2">"lima"</span><span class="p">,</span> <span class="s2">"mike"</span><span class="p">,</span> <span class="s2">"november"</span><span class="p">,</span> <span class="s2">"oscar"</span><span class="p">,</span> <span class="s2">"papa"</span><span class="p">,</span> <span class="s2">"quebec"</span><span class="p">,</span> <span class="s2">"romeo"</span><span class="p">,</span> <span class="s2">"sierra"</span><span class="p">,</span> <span class="s2">"tango"</span><span class="p">,</span> <span class="s2">"uniform"</span><span class="p">,</span> <span class="s2">"victor"</span><span class="p">,</span> <span class="s2">"wiskey"</span><span class="p">,</span> <span class="s2">"xray"</span><span class="p">,</span> <span class="s2">"yankee"</span><span class="p">,</span> <span class="s2">"zulu"</span><span class="p">]</span>
+
+
+<span class="c1"># Get ASCII value of char 'a'</span>
+
+<span class="n">ascii_a</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">'a'</span><span class="p">);</span>
+
+
+<span class="c1"># Get input from terminal</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Please type in a word (alphabets ONLY) ..."</span><span class="p">)</span>
+
+<span class="n">in_string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+
+
+
+<span class="c1"># Convert the input string into all lower case</span>
+
+<span class="n">in_string</span> <span class="o">=</span> <span class="n">in_string</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">in_string</span> <span class="o">+</span> <span class="s2">" -&gt;"</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+
+<span class="c1"># Find ASCII value of each "char" in the "string"</span>
+
+<span class="c1"># The difference of ASCII value between these characters and "a"</span>
+
+<span class="c1"># will become the index to the list of words</span>
+
+
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">in_string</span><span class="p">))</span> <span class="p">:</span>
+
+     <span class="n">in_ascii</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">in_string</span><span class="p">[</span><span class="n">k</span><span class="p">])</span> <span class="o">-</span> <span class="n">ascii_a</span>
+
+     <span class="nb">print</span><span class="p">(</span><span class="n">words</span><span class="p">[</span><span class="n">in_ascii</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Please type in a word (alphabets ONLY) ...
+toby -&gt;
+
+tango
+oscar
+beta
+yankee
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="2D-Array">
+<a class="anchor" href="#2D-Array" aria-hidden="true"><span class="octicon octicon-link"></span></a>2D Array<a class="anchor-link" href="#2D-Array"> </a>
+</h2>
+<ul>
+<li>Find another way to print the matrix</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">keypad</span> <span class="o">=</span>   <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span>
+            <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
+            <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span>
+            <span class="p">[</span><span class="s2">" "</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">" "</span><span class="p">]]</span>
+
+<span class="k">def</span> <span class="nf">print_matrix3</span><span class="p">(</span><span class="n">matrix</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">matrix</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="o">*</span><span class="n">i</span><span class="p">)</span>
+            
+<span class="n">print_matrix3</span><span class="p">(</span><span class="n">keypad</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1 2 3
+4 5 6
+7 8 9
+  0  
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks">
+<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+</h2>
+<ul>
+<li>Print what month you were born and how old you are by iterating through the keyboard (don't just write a string).</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">lookup_keyboard</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="p">:</span>
+
+
+
+<span class="c1"># Create a virtual keyboard by 2-D array</span>
+
+<span class="c1">#   - It is actually a list, with 2-dimenstion </span>
+
+<span class="c1">#   - In total it has 4 rows, each row has different number of list elements </span>
+
+
+
+     <span class="n">keyboard</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">"`"</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="s2">"-"</span><span class="p">,</span> <span class="s2">"="</span><span class="p">],</span>
+
+                 <span class="p">[</span><span class="s2">"Q"</span><span class="p">,</span> <span class="s2">"W"</span><span class="p">,</span> <span class="s2">"E"</span><span class="p">,</span> <span class="s2">"R"</span><span class="p">,</span> <span class="s2">"T"</span><span class="p">,</span> <span class="s2">"Y"</span><span class="p">,</span> <span class="s2">"U"</span><span class="p">,</span> <span class="s2">"I"</span><span class="p">,</span> <span class="s2">"O"</span><span class="p">,</span> <span class="s2">"P"</span><span class="p">,</span> <span class="s2">"["</span><span class="p">,</span> <span class="s2">"]"</span><span class="p">],</span>
+
+                 <span class="p">[</span><span class="s2">"A"</span><span class="p">,</span> <span class="s2">"S"</span><span class="p">,</span> <span class="s2">"D"</span><span class="p">,</span> <span class="s2">"F"</span><span class="p">,</span> <span class="s2">"G"</span><span class="p">,</span> <span class="s2">"H"</span><span class="p">,</span> <span class="s2">"J"</span><span class="p">,</span> <span class="s2">"K"</span><span class="p">,</span> <span class="s2">"L"</span><span class="p">,</span> <span class="s2">";"</span><span class="p">,</span> <span class="s2">"'"</span><span class="p">],</span>
+
+                 <span class="p">[</span><span class="s2">"Z"</span><span class="p">,</span> <span class="s2">"X"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"V"</span><span class="p">,</span> <span class="s2">"B"</span><span class="p">,</span> <span class="s2">"N"</span><span class="p">,</span> <span class="s2">"M"</span><span class="p">,</span> <span class="s2">","</span><span class="p">,</span> <span class="s2">"."</span><span class="p">,</span> <span class="s2">"/"</span><span class="p">]</span> <span class="p">]</span>
+
+
+
+     <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">msg</span><span class="p">))</span> <span class="p">:</span>  <span class="c1"># Loop each letter in mybirthday</span>
+
+          <span class="n">bb</span> <span class="o">=</span> <span class="n">msg</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>   <span class="c1"># Get the k-th letter in mybirthday</span>
+
+          <span class="k">if</span> <span class="n">bb</span><span class="o">.</span><span class="n">isnumeric</span><span class="p">()</span> <span class="p">:</span>  <span class="c1"># Convert it to a number if it is numeric</span>
+
+               <span class="n">bb</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">bb</span><span class="p">)</span>
+
+          <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="p">:</span>   <span class="c1"># Loop through each row of keyboard array</span>
+
+               <span class="k">if</span> <span class="n">keyboard</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">bb</span><span class="p">)</span> <span class="p">:</span> <span class="c1"># To check if an element is in the list or NOT</span>
+
+                    <span class="n">idx</span> <span class="o">=</span> <span class="n">keyboard</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">bb</span><span class="p">)</span>  <span class="c1"># If it is in, then find its index</span>
+
+                    <span class="nb">print</span><span class="p">(</span><span class="n">keyboard</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">idx</span><span class="p">])</span>  <span class="c1"># Print out the letter in myname by index</span>
+
+
+
+
+
+
+
+<span class="n">myname</span> <span class="o">=</span> <span class="s2">"Max"</span>
+
+<span class="n">myname</span> <span class="o">=</span> <span class="n">myname</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"My name is : "</span><span class="p">)</span>
+
+<span class="n">lookup_keyboard</span><span class="p">(</span><span class="n">myname</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+
+
+
+
+<span class="n">mybirthday</span><span class="o">=</span> <span class="s2">"2006.1.25"</span>
+
+<span class="n">mybirthday</span><span class="o">=</span> <span class="n">mybirthday</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"My birthday is : "</span><span class="p">)</span>
+
+<span class="n">lookup_keyboard</span><span class="p">(</span><span class="n">mybirthday</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+
+
+<span class="n">mymonth</span> <span class="o">=</span> <span class="s2">"January"</span>
+
+<span class="n">mymonth</span><span class="o">=</span> <span class="n">mymonth</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The month of my birthday is : "</span><span class="p">)</span>
+
+<span class="n">lookup_keyboard</span><span class="p">(</span><span class="n">mymonth</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+
+
+<span class="n">myage</span> <span class="o">=</span> <span class="s2">"16"</span>
+
+<span class="n">myage</span> <span class="o">=</span> <span class="n">myage</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"My age is : "</span><span class="p">)</span>
+
+<span class="n">lookup_keyboard</span><span class="p">(</span><span class="n">myage</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>My name is : 
+M
+A
+X
+
+
+My birthday is : 
+2
+0
+0
+6
+.
+1
+.
+2
+5
+
+
+The month of my birthday is : 
+J
+A
+N
+U
+A
+R
+Y
+
+
+My age is : 
+1
+6
+
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="mmaxwu/cs"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/cs/week%2015/jupyter/2022/12/06/IterationsLesson.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/cs/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/cs/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/cs/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Max is a student attending Del Norte High School</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
