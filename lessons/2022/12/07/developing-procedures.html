@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      3 min read
     
 </span></p>
 
@@ -206,19 +206,23 @@ Steps of developing procedure: picking a useful name, thinking of parameters (wh
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">currentPoints</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your current points?"</span><span class="p">)</span>
-<span class="n">quizPoints</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"What is your quiz grade?"</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">gradeCalculation</span> <span class="p">(</span><span class="n">score</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"What was the quiz grade?"</span><span class="p">)</span>
+    <span class="n">quizGrade</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="n">quizGrade</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">quizGrade</span><span class="p">)</span>
+    <span class="n">currentGrade</span> <span class="o">=</span> <span class="n">score</span> <span class="o">/</span> <span class="mi">40</span> 
+    <span class="n">currentGrade</span> <span class="o">=</span> <span class="n">currentGrade</span> <span class="o">*</span> <span class="mi">100</span>
+    <span class="k">if</span> <span class="n">currentGrade</span> <span class="o">&gt;</span> <span class="n">quizGrade</span><span class="p">:</span>
+        <span class="n">quizGrade</span> <span class="o">=</span> <span class="n">currentGrade</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">quizGrade</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="n">currentGrade</span><span class="p">)</span>
+        
+<span class="nb">print</span><span class="p">(</span><span class="s2">"What was the overall grade"</span><span class="p">)</span>
 
-<span class="n">currentGrade</span> <span class="o">=</span> <span class="n">currentPoints</span> <span class="o">/</span> <span class="mi">40</span>
-<span class="n">currentGrade</span> <span class="o">=</span> <span class="n">currentGrade</span> <span class="o">*</span> <span class="mi">100</span>
-
-<span class="n">quizGrade</span> <span class="o">=</span> <span class="n">quizPoints</span> <span class="o">/</span> <span class="mi">40</span>
-<span class="n">quizGrade</span> <span class="o">=</span> <span class="n">quizGrade</span> <span class="o">*</span> <span class="mi">100</span> 
-
-<span class="k">if</span> <span class="n">currentGrade</span> <span class="o">&gt;</span> <span class="n">quizGrade</span><span class="p">:</span>
-    <span class="n">quizGrade</span> <span class="o">=</span> <span class="n">currentGrade</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="n">currentGrade</span><span class="p">)</span>
+<span class="n">finalScore</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+<span class="n">finalScore</span> <span class="o">=</span> <span class="p">(</span><span class="n">gradeCalculation</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">finalScore</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">finalScore</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -230,18 +234,12 @@ Steps of developing procedure: picking a useful name, thinking of parameters (wh
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/Users/lixiwu/Documents/Computer Science/CSP/cs/_notebooks/2022-12-07-developing-procedures.ipynb Cell 5</span> in <span class="ansi-cyan-fg">&lt;cell line: 5&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/lixiwu/Documents/Computer%20Science/CSP/cs/_notebooks/2022-12-07-developing-procedures.ipynb#W4sZmlsZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> currentPoints = input("What is your current points?")
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/lixiwu/Documents/Computer%20Science/CSP/cs/_notebooks/2022-12-07-developing-procedures.ipynb#W4sZmlsZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span> quizPoints = input("What is your quiz grade?")
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/lixiwu/Documents/Computer%20Science/CSP/cs/_notebooks/2022-12-07-developing-procedures.ipynb#W4sZmlsZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span> currentGrade = currentPoints / 40
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/lixiwu/Documents/Computer%20Science/CSP/cs/_notebooks/2022-12-07-developing-procedures.ipynb#W4sZmlsZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span> currentGrade = currentGrade * 100
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/lixiwu/Documents/Computer%20Science/CSP/cs/_notebooks/2022-12-07-developing-procedures.ipynb#W4sZmlsZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> quizGrade = quizPoints / 40
-
-<span class="ansi-red-fg">TypeError</span>: unsupported operand type(s) for /: 'str' and 'int'</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>What was the overall grade
+What was the quiz grade?
+75.0
+None
+</pre>
 </div>
 </div>
 
