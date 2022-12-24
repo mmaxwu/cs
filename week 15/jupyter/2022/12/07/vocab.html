@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      8 min read
     
 </span></p>
 
@@ -252,8 +252,13 @@ Value in binary: 0b1001
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><mark>Binary Data Abstractions: Boolean, ASCII, Unicode, RGB:</mark>
-A binary data abstraction is a data structure that is used to represent and manipulate data in binary form. This can be useful in situations where data needs to be stored or transmitted in a compact and efficient manner, such as in computer memory or network communication.</p>
+<p><mark>Binary Data Abstractions: Boolean, ASCII, Unicode, RGB:</mark></p>
+<ul>
+<li>Boolean data type is a binary data type that can have only two possible values: true or false. It is often used to represent a binary decision or a simple true/false choice in a program.</li>
+<li>ASCII encodes characters as numbers. It represents each character with a unique integer value between 0 and 127. ASCII is a 7-bit encoding, which means that it uses 7 bits to represent each character.</li>
+<li>Unicode is a standard for encoding characters that includes a much larger range of characters than ASCII. It represents each character with a unique integer value, which can be up to 21 bits in length. Unicode includes all the characters in ASCII, as well as many additional characters from a variety of scripts and languages.</li>
+<li>RGB (Red Green Blue) is a color model used to represent colors on a computer or other digital display device. In the RGB model, each color is represented by a combination of red, green, and blue light. The intensity of each color is represented by a number between 0 and 255, with 0 representing no intensity and 255 representing full intensity.</li>
+</ul>
 
 </div>
 </div>
@@ -265,10 +270,174 @@ A binary data abstraction is a data structure that is used to represent and mani
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create list of phonetic alpabets</span>
+
+<span class="n">words</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"alfa"</span><span class="p">,</span> <span class="s2">"beta"</span><span class="p">,</span> <span class="s2">"charlie"</span><span class="p">,</span> <span class="s2">"delta"</span><span class="p">,</span> <span class="s2">"echo"</span><span class="p">,</span> <span class="s2">"foxtrot"</span><span class="p">,</span> <span class="s2">"golf"</span><span class="p">,</span> <span class="s2">"hotel"</span><span class="p">,</span> <span class="s2">"india"</span><span class="p">,</span> <span class="s2">"julitt"</span><span class="p">,</span> <span class="s2">"kilo"</span><span class="p">,</span> <span class="s2">"lima"</span><span class="p">,</span> <span class="s2">"mike"</span><span class="p">,</span> <span class="s2">"november"</span><span class="p">,</span> <span class="s2">"oscar"</span><span class="p">,</span> <span class="s2">"papa"</span><span class="p">,</span> <span class="s2">"quebec"</span><span class="p">,</span> <span class="s2">"romeo"</span><span class="p">,</span> <span class="s2">"sierra"</span><span class="p">,</span> <span class="s2">"tango"</span><span class="p">,</span> <span class="s2">"uniform"</span><span class="p">,</span> <span class="s2">"victor"</span><span class="p">,</span> <span class="s2">"wiskey"</span><span class="p">,</span> <span class="s2">"xray"</span><span class="p">,</span> <span class="s2">"yankee"</span><span class="p">,</span> <span class="s2">"zulu"</span><span class="p">]</span>
+
+
+<span class="c1"># Get ASCII value of char 'a'</span>
+
+<span class="n">ascii_a</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="s1">'a'</span><span class="p">);</span>
+
+
+<span class="c1"># Get input from terminal</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Please type in a word (alphabets ONLY) ..."</span><span class="p">)</span>
+
+<span class="n">in_string</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+
+
+
+<span class="c1"># Convert the input string into all lower case</span>
+
+<span class="n">in_string</span> <span class="o">=</span> <span class="n">in_string</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">in_string</span> <span class="o">+</span> <span class="s2">" -&gt;"</span> <span class="o">+</span> <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">)</span>
+
+
+<span class="c1"># Find ASCII value of each "char" in the "string"</span>
+
+<span class="c1"># The difference of ASCII value between these characters and "a"</span>
+
+<span class="c1"># will become the index to the list of words</span>
+
+
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">in_string</span><span class="p">))</span> <span class="p">:</span>
+
+     <span class="n">in_ascii</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">in_string</span><span class="p">[</span><span class="n">k</span><span class="p">])</span> <span class="o">-</span> <span class="n">ascii_a</span>
+
+     <span class="nb">print</span><span class="p">(</span><span class="n">words</span><span class="p">[</span><span class="n">in_ascii</span><span class="p">])</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Please type in a word (alphabets ONLY) ...
+mortensen -&gt;
+
+mike
+oscar
+romeo
+tango
+echo
+november
+sierra
+echo
+november
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define a string with Unicode characters</span>
+<span class="n">unicode_string</span> <span class="o">=</span> <span class="s2">"Hi, my name is Max"</span>
+
+<span class="c1"># Print the string to the console</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">unicode_string</span><span class="p">)</span>
+
+<span class="c1"># Get the length of the string</span>
+<span class="n">string_length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">unicode_string</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The length of the string is </span><span class="si">{</span><span class="n">string_length</span><span class="si">}</span><span class="s2"> characters."</span><span class="p">)</span>
+
+<span class="c1"># Get the Unicode code point for the first character in the string</span>
+<span class="n">first_char_code</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">unicode_string</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The Unicode code point for the first character is </span><span class="si">{</span><span class="n">first_char_code</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
+
+<span class="c1"># Convert the Unicode code point to a character</span>
+<span class="n">first_char</span> <span class="o">=</span> <span class="nb">chr</span><span class="p">(</span><span class="n">first_char_code</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The character for code point </span><span class="si">{</span><span class="n">first_char_code</span><span class="si">}</span><span class="s2"> is </span><span class="si">{</span><span class="n">first_char</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hi, my name is Max
+The length of the string is 18 characters.
+The Unicode code point for the first character is 72.
+The character for code point 72 is H.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define a color using RGB values</span>
+<span class="n">red</span> <span class="o">=</span> <span class="p">(</span><span class="mi">255</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Print the RGB values to the console</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Red: </span><span class="si">{</span><span class="n">red</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Green: </span><span class="si">{</span><span class="n">red</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Blue: </span><span class="si">{</span><span class="n">red</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Convert the RGB values to a hexadecimal string</span>
+<span class="n">hex_string</span> <span class="o">=</span> <span class="s2">"#</span><span class="si">{:02x}{:02x}{:02x}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">red</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">red</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">red</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Hexadecimal: </span><span class="si">{</span><span class="n">hex_string</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+
+<span class="c1"># Define a function to convert an RGB tuple to a hexadecimal string</span>
+<span class="k">def</span> <span class="nf">rgb_to_hex</span><span class="p">(</span><span class="n">rgb</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">"#</span><span class="si">{:02x}{:02x}{:02x}</span><span class="s2">"</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">rgb</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">rgb</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">rgb</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+
+<span class="c1"># Convert the RGB values to a hexadecimal string using the function</span>
+<span class="n">hex_string</span> <span class="o">=</span> <span class="n">rgb_to_hex</span><span class="p">(</span><span class="n">red</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Hexadecimal: </span><span class="si">{</span><span class="n">hex_string</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Red: 255
+Green: 0
+Blue: 0
+Hexadecimal: #ff0000
+Hexadecimal: #ff0000
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -538,7 +707,7 @@ Managing complexity with variables involves using different data structures to o
     <div class="footer-col-wrapper">
       <div class="footer-col">
         <p class="feed-subscribe">
-          <a href="/cs/feed.xml">
+          <a href="https://mmaxwu.github.io/cs/feed.xml">
             <svg class="svg-icon orange">
               <use xlink:href="/cs/assets/minima-social-icons.svg#rss"></use>
             </svg><span>Subscribe</span>
