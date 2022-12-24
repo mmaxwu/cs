@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      9 min read
+      12 min read
     
 </span></p>
 
@@ -762,6 +762,144 @@ Managing complexity with variables involves using different data structures to o
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The largest number is 5.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><mark>Expressions, Comparison Operators, Booleans Expressions and Selection, Booleans Expressions and Iteration, Truth Tables: </mark></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>
+<p>An expression is a combination of values, variables, and operators that produces a result when evaluated. Expressions can be used to perform calculations or to return a value.</p>
+</li>
+<li>
+<p>Comparison operators are operators that compare two values and return a Boolean value indicating whether the comparison is true or false. Some common comparison operators in Python are:</p>
+</li>
+</ul>
+<p>==: equal to
+!=: not equal to</p>
+<blockquote>
+<p>:greater than&lt;: less than
+=:greater than or equal to&lt;=: less than or equal to</p>
+<ul>
+<li>Boolean expressions are expressions that evaluate to a Boolean value of True or False. They can be created using comparison operators or by combining other Boolean expressions using logical operators such as and, or, and not.</li>
+</ul>
+</blockquote>
+<ul>
+<li>
+<p>Selection refers to the process of choosing between different options or paths based on certain conditions. In programming, selection is often implemented using control structures such as if statements or switch statements, which allow the program to execute different code blocks depending on whether a certain condition is met. Boolean expressions can be used in selection to determine which code block to execute based on the truth value of the expression.</p>
+</li>
+<li>
+<p>Iteration is the process of repeating a set of steps or instructions multiple times. In programming, iteration is often implemented using looping structures such as for loops or while loops, which allow the program to execute a block of code multiple times until a certain condition is met. Boolean expressions can be used in iteration to control the execution of the loop by determining when to terminate the loop based on the truth value of the expression.</p>
+</li>
+<li>
+<p>A truth table is a chart that lists all possible combinations of input values for a logical function and shows the corresponding output value for each combination. Truth tables can be used to help understand the behavior of logical expressions and to test the correctness of logical expressions.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define a function to check if a number is odd</span>
+<span class="k">def</span> <span class="nf">is_odd</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+  <span class="k">return</span> <span class="n">number</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">!=</span> <span class="mi">0</span>
+
+<span class="c1"># Test the function with some numbers</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">is_odd</span><span class="p">(</span><span class="mi">1</span><span class="p">))</span>  <span class="c1"># True</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">is_odd</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>  <span class="c1"># False</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">is_odd</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>  <span class="c1"># True</span>
+
+<span class="c1"># Define a function to check if a number is within a certain range</span>
+<span class="k">def</span> <span class="nf">in_range</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">lower</span><span class="p">,</span> <span class="n">upper</span><span class="p">):</span>
+  <span class="k">return</span> <span class="n">lower</span> <span class="o">&lt;=</span> <span class="n">number</span> <span class="o">&lt;=</span> <span class="n">upper</span>
+
+<span class="c1"># Test the function with some numbers</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">in_range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>  <span class="c1"># True</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">in_range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>  <span class="c1"># False</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">in_range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>   <span class="c1"># True</span>
+
+<span class="c1"># Use a Boolean expression in an if statement</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">"x is positive."</span><span class="p">)</span>
+
+<span class="c1"># Use a Boolean expression in a while loop</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="k">while</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+  <span class="n">x</span> <span class="o">-=</span> <span class="mi">1</span>
+
+<span class="c1"># Use a truth table to test a logical expression</span>
+<span class="c1">#</span>
+<span class="c1"># Inputs:  A      B</span>
+<span class="c1"># Output:  A and B</span>
+<span class="c1">#</span>
+<span class="c1"># A | B | A and B</span>
+<span class="c1"># --+---+---------</span>
+<span class="c1"># 0 | 0 |    0</span>
+<span class="c1"># 0 | 1 |    0</span>
+<span class="c1"># 1 | 0 |    0</span>
+<span class="c1"># 1 | 1 |    1</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>True
+False
+True
+True
+False
+True
+x is positive.
+5
+4
+3
+2
+1
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
