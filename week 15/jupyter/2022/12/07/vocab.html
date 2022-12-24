@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      8 min read
+      9 min read
     
 </span></p>
 
@@ -253,6 +253,13 @@ Value in binary: 0b1001
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><mark>Binary Data Abstractions: Boolean, ASCII, Unicode, RGB:</mark></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <ul>
 <li>Boolean data type is a binary data type that can have only two possible values: true or false. It is often used to represent a binary decision or a simple true/false choice in a program.</li>
 <li>ASCII encodes characters as numbers. It represents each character with a unique integer value between 0 and 127. ASCII is a 7-bit encoding, which means that it uses 7 bits to represent each character.</li>
@@ -482,10 +489,25 @@ Not discussed yet</p>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><mark>Variables, Data Types, Assignment Operators:</mark>
-A variable is a named location in a computer's memory where a value can be stored and retrieved. In most programming languages, variables have a specific data type, which determines the kind of values that the variable can store.</p>
+<p><mark>Variables, Data Types, Assignment Operators:</mark></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>
+<p>A variable is a named location in a computer's memory where a value can be stored and retrieved. In most programming languages, variables have a specific data type, which determines the kind of values that the variable can store.</p>
+</li>
+<li>
 <p>Data types are categories that are used to classify the different types of data that can be stored in a variable. Examples of common data types include integers, which are whole numbers, and strings, which are sequences of characters.</p>
+</li>
+<li>
 <p>Assignment operators are operators that are used to assign a value to a variable. In most programming languages, the assignment operator is the equal sign (=). For example, the following code uses the assignment operator to assign the value 10 to a variable named x:</p>
+</li>
+</ul>
 
 </div>
 </div>
@@ -683,6 +705,69 @@ Managing complexity with variables involves using different data structures to o
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><mark>Algorithms, Sequence, Selection, Iteration:</mark></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>
+<p>An algorithm is a set of steps or procedures for solving a specific problem. It is a step-by-step approach to achieving a desired result.</p>
+</li>
+<li>
+<p>A sequence is a series of steps or events that occur in a specific order. In programming, a sequence can refer to the order in which statements or blocks of code are executed.</p>
+</li>
+<li>
+<p>Selection is the process of choosing between different options or paths based on certain conditions. In programming, selection is often implemented using control structures such as if statements or switch statements, which allow the program to execute different code blocks depending on whether a certain condition is met.</p>
+</li>
+<li>
+<p>Iteration is the process of repeating a set of steps or instructions multiple times. In programming, iteration is often implemented using looping structures such as for loops or while loops, which allow the program to execute a block of code multiple times until a certain condition is met.</p>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define a function to find the largest number in a list</span>
+<span class="k">def</span> <span class="nf">find_largest</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+  <span class="c1"># Set the initial largest number to the first number in the list</span>
+  <span class="n">largest</span> <span class="o">=</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+  
+  <span class="c1"># Iterate through the rest of the numbers in the list</span>
+  <span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">numbers</span><span class="p">[</span><span class="mi">1</span><span class="p">:]:</span>
+    <span class="c1"># If the current number is larger than the current largest number, update the largest number</span>
+    <span class="k">if</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="n">largest</span><span class="p">:</span>
+      <span class="n">largest</span> <span class="o">=</span> <span class="n">number</span>
+      
+  <span class="c1"># Return the largest number</span>
+  <span class="k">return</span> <span class="n">largest</span>
+
+<span class="c1"># Test the function with a list of numbers</span>
+<span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+<span class="n">largest</span> <span class="o">=</span> <span class="n">find_largest</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The largest number is </span><span class="si">{</span><span class="n">largest</span><span class="si">}</span><span class="s2">."</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
