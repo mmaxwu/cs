@@ -1,8 +1,8 @@
 ---
 toc: true
 layout: post
-description: Performance Task Scoring 1
-title: Performance Task Scoring 1
+description: Performance Task Scoring 1 & 2
+title: Performance Task Scoring 1 & 2
 categories: [Week 17, jupyter]
 ---
 
@@ -33,4 +33,28 @@ For Submission 1, Collegeboard did not award the point for Program Purpose and F
 |Procedural Abstraction|1|1|Both code segments showed the procedure and its call. The description of the procedure was also very detailed and showed how it contributed to the overall functionality.|
 |Algorithm Implementation|1|1|Sequencing, selection, and iteration were all present in the program code segment. The steps of the algorithm were explained in great detail.|
 |Testing|1|1|Two calls to the procedure were described in detail in 3c, including the conditions and results of each call.|
+
+
+## Submission 3:
+
+|Reporting Category|Student Grading Score|Collegeboard's Score|Comments|
+|:---:|:---:|:---:|:---:|
+|Program Purpose and Function|0|0|The functionality is the purpose, which results in a decrease in the score.|
+|Data Abstraction|0|1|The second code segment did not demonstrate the usage of the list.|
+|Managing Complexity|1|1|The list was illustrated to handle complexity and the explanation was provided in an extensive manner.|
+|Procedural Abstraction|1|1|The procedure and how it was used was demonstrated and a thorough explanation was provided.|
+|Algorithm Implementation|1|1|The code segment exhibited the usage of sequencing, selection, and iteration, and provided a very comprehensive description of the steps.|
+|Testing|1|1|All the calls, conditions, and results are shown.|
+
+
+## Submission 4:
+
+|Reporting Category|Student Grading Score|Collegeboard's Score|Comments|
+|:---:|:---:|:---:|:---:|
+|Program Purpose and Function|1|1|The video showed the input, how the program functions and the output it produces, making the purpose of the program clear.|
+|Data Abstraction|1|0|The code segment displays the list and its operations, and provides a clear explanation of its functionality.|
+|Managing Complexity|1|0|The list handles complexity and a complete explanation of its function is provided.|
+|Procedural Abstraction|1|1|The code segment displays the procedure and its usage and provides a thorough explanation of its functionality.|
+|Algorithm Implementation|1|1|Multiple while loops and if statements are utilized in the code segment. The steps of the algorithm are explained in a very thorough manner.|
+|Testing|1|0|Calls, conditions, and results are all shown.|
 
