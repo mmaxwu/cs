@@ -1,14 +1,16 @@
 ---
 toc: true
 layout: post
-description: Performance Task Scoring 1 & 2
-title: Performance Task Scoring 1 & 2
+description: Performance Task Scoring 1, 2, 3, 4
+title: Performance Task Scoring 1, 2, 3, 4
 categories: [Week 17, jupyter]
 ---
 
 ## Reflection:
 For Submission 1, Collegeboard did not award the point for Program Purpose and Function because the stated purpose was not considered valid. However, I did award a point, believing that the stated purpose was sufficient. This means that when I submit my project to Collegeboard, I should provide a more detailed and specific purpose for the program, while still keeping it concise. For Submission 2, I did not award a point for Data Abstraction because I thought that a screenshot of the list variable was required in the code segment. However, Collegeboard did award the point for Data Abstraction because the code segments demonstrated the use of lists. While the list was not explicitly mentioned in the code segment, it was still evident that it was being utilized. The names of the lists were also specified in 3.b.iii, so the grader knew which variables were lists in the code. This tells me that it is important to demonstrate the use of lists in the code segments rather than just showing their creation. Through grading these submissions, I have learned that I do not need to write a whole paragraph for each subsection of 3a. I have also learned that it is important to be more detailed and explain the code when creating my project.
 
+## Summary
+To summarize, my CPT scores have taught me that it is not always necessary to be overly detailed in my responses, but that some areas, such as explaining algorithms and procedures, do require more detail. Additionally, I have learned that lists and procedures can be used in creative ways, and that testing should focus on specific code rather than just the user experience. Furthermore, I have found that it is important to provide specific values for arguments and to ensure that conditions are relevant to the parameters.
 
 ## Submission 1:
 
@@ -57,4 +59,28 @@ For Submission 1, Collegeboard did not award the point for Program Purpose and F
 |Procedural Abstraction|1|1|The code segment displays the procedure and its usage and provides a thorough explanation of its functionality.|
 |Algorithm Implementation|1|1|Multiple while loops and if statements are utilized in the code segment. The steps of the algorithm are explained in a very thorough manner.|
 |Testing|1|0|Calls, conditions, and results are all shown.|
+
+## Submission 5:
+
+|Reporting Category|Student Grading Score|Collegeboard's Score|Comments|
+|:---:|:---:|:---:|:---:|
+|Program Purpose and Function|1|1|The video showed the input, how the program functions and the output it produces, making the purpose of the program clear.|
+|Data Abstraction|1|0|The code segment displays the list and its operations, and provides a clear explanation of its functionality.|
+|Managing Complexity|1|0|The list handles complexity and a complete explanation of its function is provided.|
+|Procedural Abstraction|1|1|The code segment displays the procedure and its usage and provides a thorough explanation of its functionality.|
+|Algorithm Implementation|1|1|Multiple while loops and if statements are utilized in the code segment. The steps of the algorithm are explained in a very thorough manner.|
+|Testing|1|0|Calls, conditions, and results are all shown.|
+
+
+## Submission 6:
+
+|Reporting Category|Student Grading Score|Collegeboard's Score|Comments|
+|:---:|:---:|:---:|:---:|
+|Program Purpose and Function|1|1|The video showed the input, how the program functions and the output it produces, making the purpose of the program clear.|
+|Data Abstraction|1|0|The code segment displays the list and its operations, and provides a clear explanation of its functionality.|
+|Managing Complexity|1|0|The list handles complexity and a complete explanation of its function is provided.|
+|Procedural Abstraction|1|1|The code segment displays the procedure and its usage and provides a thorough explanation of its functionality.|
+|Algorithm Implementation|1|1|Multiple while loops and if statements are utilized in the code segment. The steps of the algorithm are explained in a very thorough manner.|
+|Testing|1|0|Calls, conditions, and results are all shown.|
+
 
