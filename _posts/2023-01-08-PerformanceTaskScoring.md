@@ -60,27 +60,5 @@ To summarize, my CPT scores have taught me that it is not always necessary to be
 |Algorithm Implementation|1|1|Multiple while loops and if statements are utilized in the code segment. The steps of the algorithm are explained in a very thorough manner.|
 |Testing|1|0|Calls, conditions, and results are all shown.|
 
-## Submission 5:
-
-|Reporting Category|Student Grading Score|Collegeboard's Score|Comments|
-|:---:|:---:|:---:|:---:|
-|Program Purpose and Function|1|1|The video showed the input, how the program functions and the output it produces, making the purpose of the program clear.|
-|Data Abstraction|1|0|The code segment displays the list and its operations, and provides a clear explanation of its functionality.|
-|Managing Complexity|1|0|The list handles complexity and a complete explanation of its function is provided.|
-|Procedural Abstraction|1|1|The code segment displays the procedure and its usage and provides a thorough explanation of its functionality.|
-|Algorithm Implementation|1|1|Multiple while loops and if statements are utilized in the code segment. The steps of the algorithm are explained in a very thorough manner.|
-|Testing|1|0|Calls, conditions, and results are all shown.|
-
-
-## Submission 6:
-
-|Reporting Category|Student Grading Score|Collegeboard's Score|Comments|
-|:---:|:---:|:---:|:---:|
-|Program Purpose and Function|1|1|The video showed the input, how the program functions and the output it produces, making the purpose of the program clear.|
-|Data Abstraction|1|0|The code segment displays the list and its operations, and provides a clear explanation of its functionality.|
-|Managing Complexity|1|0|The list handles complexity and a complete explanation of its function is provided.|
-|Procedural Abstraction|1|1|The code segment displays the procedure and its usage and provides a thorough explanation of its functionality.|
-|Algorithm Implementation|1|1|Multiple while loops and if statements are utilized in the code segment. The steps of the algorithm are explained in a very thorough manner.|
-|Testing|1|0|Calls, conditions, and results are all shown.|
 
 
