@@ -6,6 +6,7 @@ title: Collegeboard Practice MC 2
 categories: [Week 20, jupyter]
 ---
 
+
 ## Test Corrections
 ![]({{site.baseurl}}/images/CB1.png)
 This question goes under the topic of boolean expressions, which I need to review and do more problems. This is one of the three questions on this test about logic gates, which are questions I have never encountered before. After checking out the collegeboard videos provided on the section, I did not have any takeaways as collegeboard did not cover logic gate type questions. But anyways, using my deductive skills, I have figured out this question. The question tells us that the output has to be true, so by working our way from bottom to top, true has to be with true in the and statement in order to be true, and working up to the first logic gate, false has to be with true in the or statement in order to be true. 
