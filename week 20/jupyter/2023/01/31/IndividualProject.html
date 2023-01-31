@@ -102,12 +102,12 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#our-team-goal">Our Team Goal:</a></li>
 <li class="toc-entry toc-h2"><a href="#video">Video:</a></li>
 <li class="toc-entry toc-h2"><a href="#my-portion">My Portion:</a></li>
-<li class="toc-entry toc-h2"><a href="#row-1">Row 1:</a></li>
-<li class="toc-entry toc-h2"><a href="#row-2">Row 2:</a></li>
-<li class="toc-entry toc-h2"><a href="#row-3">Row 3</a></li>
-<li class="toc-entry toc-h2"><a href="#row-4">Row 4</a></li>
-<li class="toc-entry toc-h2"><a href="#row-5">Row 5</a></li>
-<li class="toc-entry toc-h2"><a href="#row-6">Row 6</a></li>
+<li class="toc-entry toc-h2"><a href="#row-1---purpose-and-function">Row 1 - Purpose and Function</a></li>
+<li class="toc-entry toc-h2"><a href="#row-2----data-abstraction">Row 2  - Data Abstraction</a></li>
+<li class="toc-entry toc-h2"><a href="#row-3---managing-complexity">Row 3 - Managing Complexity</a></li>
+<li class="toc-entry toc-h2"><a href="#row-4---procedural-abstraction">Row 4 - Procedural Abstraction</a></li>
+<li class="toc-entry toc-h2"><a href="#row-5---algorithm-implementation">Row 5 - Algorithm Implementation</a></li>
+<li class="toc-entry toc-h2"><a href="#row-6---testing">Row 6 - Testing</a></li>
 </ul><h2 id="our-team-goal">
 <a class="anchor" href="#our-team-goal" aria-hidden="true"><span class="octicon octicon-link"></span></a>Our Team Goal:</h2>
 <p>The end goal of the collegeboard create performance tasks is to challenge students to write a program and expertly explain a wide range aspects convered by the program in complexity management, purpose and functionality, and algorithm implementation. Due to this, we have begun a team project in hopes of practicing such skills. I personally work on one small program of our entire project, but within this sub program still contains all of the required collegeboard aspects.</p>
@@ -118,33 +118,45 @@ window.onload = wrap_img;
 
 <h2 id="my-portion">
 <a class="anchor" href="#my-portion" aria-hidden="true"><span class="octicon octicon-link"></span></a>My Portion:</h2>
-<p>My portion of the project is logging the history of the 5 most recent scores of every user. My part of the program will be connected with Evan’s leaderboard, because the leaderboard will use the data from my history, to refresh his score.</p>
+<p>My portion of the project is logging the history of the 5 most recent scores of every user. My part of the program will be connected with the DB because the history will be persistent data.</p>
 
-<h2 id="row-1">
-<a class="anchor" href="#row-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Row 1:</h2>
-<p>In my write-up, I will first reivew the program’s purpose, function and inputs, which is to provide the users with a fun and interactive experience that they can revisit and compete with others</p>
+<h2 id="row-1---purpose-and-function">
+<a class="anchor" href="#row-1---purpose-and-function" aria-hidden="true"><span class="octicon octicon-link"></span></a>Row 1 - Purpose and Function</h2>
+<p>In my write-up, I will first review the program’s purpose, function and inputs, which is to provide the users with a fun and interactive experience that they can revisit and compete with others</p>
 
-<h2 id="row-2">
-<a class="anchor" href="#row-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Row 2:</h2>
+<h2 id="row-2----data-abstraction">
+<a class="anchor" href="#row-2----data-abstraction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Row 2  - Data Abstraction</h2>
 <p>The first code section displays the “json_ready” list in the “ScoreListAPI” class in the “score.py” file located in the “api” folder. The second code section, located directly below the list, displays all code below the line “return jsonify(json_ready)”. This list holds all the data for the entered scores and profile information.</p>
 
-<h2 id="row-3">
-<a class="anchor" href="#row-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Row 3</h2>
-<p>Manages complexity by generating all the history into a single list</p>
+<h2 id="row-3---managing-complexity">
+<a class="anchor" href="#row-3---managing-complexity" aria-hidden="true"><span class="octicon octicon-link"></span></a>Row 3 - Managing Complexity</h2>
+<p>Manages complexity by generating all the history into a table</p>
 
-<h2 id="row-4">
-<a class="anchor" href="#row-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Row 4</h2>
-<p>The functions in the code lack proper parameters. I would start with the create(self) function in the model folder of scores.py. I will demonstrate its usage in the api folder of score.py on line 37 and in the if user: statement. This function is important because it converts the data entered into the table into a JSON format.</p>
+<h2 id="row-4---procedural-abstraction">
+<a class="anchor" href="#row-4---procedural-abstraction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Row 4 - Procedural Abstraction</h2>
+<ol>
+  <li>
+    <p>Create a database table to store the user’s information, including their username, score, and date of the score.</p>
+  </li>
+  <li>
+    <p>Write a function that allows a user to submit their score. This function should take in the user’s username and score as input, and store this information in the database table.</p>
+  </li>
+  <li>
+    <p>Write a function that retrieves a user’s score history, which should retrieve all of the scores for a given username from the database table.</p>
+  </li>
+</ol>
 
-<h2 id="row-5">
-<a class="anchor" href="#row-5" aria-hidden="true"><span class="octicon octicon-link"></span></a>Row 5</h2>
+<h2 id="row-5---algorithm-implementation">
+<a class="anchor" href="#row-5---algorithm-implementation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Row 5 - Algorithm Implementation</h2>
 <p>I will add the code segment “def initScores()” in the model folder of scores.py. This function sets up a test database and tables, adds users with specified parameters to a list, and uses a for loop to input the data into the table. It also includes try and except statements.</p>
 
-<h2 id="row-6">
-<a class="anchor" href="#row-6" aria-hidden="true"><span class="octicon octicon-link"></span></a>Row 6</h2>
+<h2 id="row-6---testing">
+<a class="anchor" href="#row-6---testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Row 6 - Testing</h2>
 <p>Calls: Input the data into the table
-Conditions: create() function used for creating new data, delete() function to delete the existing data.
+Conditions: create() function used for creating new data
 Result: Logs all the username scores into the table</p>
+
+<p><mark>We haven't automated database yet, so the data will be manually inputted by us for testing reasons</mark></p>
 
 
   </div><a class="u-url" href="/cs/week%2020/jupyter/2023/01/31/IndividualProject.html" hidden></a>
