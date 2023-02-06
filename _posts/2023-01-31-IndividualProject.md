@@ -2,6 +2,7 @@
 toc: true
 layout: post
 description: Providing an overview of the aspects and purpose of my part of the group's CPT plan
+title: Individual Plan
 categories: [Week 20, jupyter]
 ---
 
