@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>CPT Writeup | Max Wu</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="CPT Writeup" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Video My video demonstrating my feature can be found here video" />
+<meta property="og:description" content="Video My video demonstrating my feature can be found here video" />
+<link rel="canonical" href="https://mmaxwu.github.io/cs/week%2025/jupyter/2023/02/28/CPT.html" />
+<meta property="og:url" content="https://mmaxwu.github.io/cs/week%2025/jupyter/2023/02/28/CPT.html" />
+<meta property="og:site_name" content="Max Wu" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-02-28T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="CPT Writeup" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-02-28T00:00:00-06:00","datePublished":"2023-02-28T00:00:00-06:00","description":"Video My video demonstrating my feature can be found here video","headline":"CPT Writeup","mainEntityOfPage":{"@type":"WebPage","@id":"https://mmaxwu.github.io/cs/week%2025/jupyter/2023/02/28/CPT.html"},"url":"https://mmaxwu.github.io/cs/week%2025/jupyter/2023/02/28/CPT.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/cs/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://mmaxwu.github.io/cs/feed.xml" title="Max Wu" /><link rel="shortcut icon" type="image/x-icon" href="/cs/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/cs/">Max Wu</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/cs/CollegeboardNotes/">College Board Notes</a><a class="page-link" href="/cs/about/">About Me</a><a class="page-link" href="/cs/api/overview">API</a><a class="page-link" href="/cs/javascript/">Javascript</a><a class="page-link" href="/cs/search/">Search</a><a class="page-link" href="/cs/categories/">Tags</a><a class="page-link" href="/cs/vocab/">Vocab</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">CPT Writeup</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-02-28T00:00:00-06:00" itemprop="datePublished">
+        Feb 28, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      5 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/cs/categories/#Week 25">Week 25</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/cs/categories/#jupyter">jupyter</a>
+        
+      
+      </p>
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#video">Video</a></li>
+<li class="toc-entry toc-h2"><a href="#writeup">Writeup</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#2c">2c.</a></li>
+<li class="toc-entry toc-h3"><a href="#3a">3a.</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#3ai">3.a.i.</a></li>
+<li class="toc-entry toc-h4"><a href="#3aii">3.a.ii.</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#3b">3b.</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#3bi">3.b.i.</a></li>
+<li class="toc-entry toc-h4"><a href="#3bii">3.b.ii.</a></li>
+<li class="toc-entry toc-h4"><a href="#3biii">3.b.iii.</a></li>
+<li class="toc-entry toc-h4"><a href="#3biv">3.b.iv.</a></li>
+<li class="toc-entry toc-h4"><a href="#3bv">3.b.v.</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#3c">3c.</a></li>
+<li class="toc-entry toc-h3"><a href="#4c">4c.</a>
+<ul>
+<li class="toc-entry toc-h4"><a href="#4ci">4c.i.</a></li>
+<li class="toc-entry toc-h4"><a href="#4cii">4c.ii.</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h3"><a href="#4c-iii">4c. iii.</a></li>
+</ul>
+</li>
+</ul><h2 id="video">
+<a class="anchor" href="#video" aria-hidden="true"><span class="octicon octicon-link"></span></a>Video</h2>
+<p>My video demonstrating my feature can be found here <a href="https://youtu.be/QylLQ4B3vi4">video</a></p>
+
+<h2 id="writeup">
+<a class="anchor" href="#writeup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Writeup</h2>
+<h3 id="2c">
+<a class="anchor" href="#2c" aria-hidden="true"><span class="octicon octicon-link"></span></a>2c.</h3>
+<p>This is a JavaScript program that implements the game of checkers. It includes functions to move the pieces, check for available moves, check for available attack moves, and eliminate pieces. The code defines the checkerboard and the pieces as objects, with properties such as the color of the pieces, the position of the pieces on the board, and whether the pieces are kings.</p>
+
+<p>The makeMove() function takes an index as input and tries to make a move to that index. It checks whether a piece is selected and whether the index is a valid move. If it is a valid move, it executes the move and checks whether the piece has another attack move available. If there is another attack move, it shows the move. If there is no other move available, it changes turns and checks whether the game is over.</p>
+
+<p>The executeMove() function takes a piece and moves it to a new position on the board. It updates the properties of the piece and the board.</p>
+
+<p>The checkMove() function takes a piece and checks whether it can move in a certain direction. If it can move in that direction, it shows the move.</p>
+
+<p>The checkAttack() function takes a piece and checks whether it can attack an opponent’s piece in a certain direction. If it can attack, it shows the move.</p>
+
+<p>The eliminateCheck() function removes an opponent’s piece that has been attacked.</p>
+<h3 id="3a">
+<a class="anchor" href="#3a" aria-hidden="true"><span class="octicon octicon-link"></span></a>3a.</h3>
+<h4 id="3ai">
+<a class="anchor" href="#3ai" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.a.i.</h4>
+<p>This program helps the user de-stress, have fun, and cure boredom by providing small and fun game with user game history tracking.</p>
+<h4 id="3aii">
+<a class="anchor" href="#3aii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.a.ii.</h4>
+<p>This program allows users to play a game of checkers by themselves, or with a friend. Checkers is a competitive yet fun game, so it will allow the players to relax. There is an outline showed by a grayed out box which shows where the user can go with the piece selected, which provides inexeperienced or new checkers players some guidance of how to play the game.</p>
+
+<h3 id="3b">
+<a class="anchor" href="#3b" aria-hidden="true"><span class="octicon octicon-link"></span></a>3b.</h3>
+<h4 id="3bi">
+<a class="anchor" href="#3bi" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.b.i.</h4>
+<p><img src="/cs/images/cpt1.png" alt=""></p>
+<h4 id="3bii">
+<a class="anchor" href="#3bii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.b.ii.</h4>
+<p><img src="/cs/images/cpt21.png" alt="">
+<img src="/cs/images/cpt22.png" alt=""></p>
+<h4 id="3biii">
+<a class="anchor" href="#3biii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.b.iii.</h4>
+<p>The name of the variable representing the collection type is “data”, and new data for username, date(dogame), and result are added to the table</p>
+<h4 id="3biv">
+<a class="anchor" href="#3biv" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.b.iv.</h4>
+<p>The data that my list contains is important to my checkers game program because it contains every attribute about the data of the usernames and game, which are classified by username of red, username of black, result of red, result of black, and the date that this game was played. This is absolutely vital to the program as it is able to fetch and store the recieved data in order to populate the tables of the game history.</p>
+<h4 id="3bv">
+<a class="anchor" href="#3bv" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.b.v.</h4>
+<p>If the variable “data” is not utilized, the program will suffer from inefficiency, as it will necessitate individual variables for each attribute, resulting in code that is needlessly lengthy, bulky, and complicated.</p>
+<h3 id="3c">
+<a class="anchor" href="#3c" aria-hidden="true"><span class="octicon octicon-link"></span></a>3c.</h3>
+<p><img src="/cs/images/cpt21.png" alt="">
+<img src="/cs/images/cpt22.png" alt="">
+The list being used to manage complexity in the program is the “data” array in the “read_users” function. This array contains the game history data fetched from the API and is iterated over using a for loop to dynamically create rows in the HTML table for each game. The sorting of the data by date in the same function also helps to manage the complexity of displaying the game history in an organized manner.</p>
+
+<h3 id="4c">
+<a class="anchor" href="#4c" aria-hidden="true"><span class="octicon octicon-link"></span></a>4c.</h3>
+<h4 id="4ci">
+<a class="anchor" href="#4ci" aria-hidden="true"><span class="octicon octicon-link"></span></a>4c.i.</h4>
+<p>The selected procedure is read_users() which fetches data from an API and displays it in an HTML table. Here are two calls to this procedure:
+Call 1 - <img src="/cs/images/cpt23.png" alt="">
+This call will fetch data from the API and display it in the HTML table specified by the resultContainer variable. The function will use default options for the fetch request and will sort the data by date and time before displaying it in the table.</p>
+
+<p>Call 2 - <img src="/cs/images/cpt24.png" alt="">
+This call specifies the url and read_fetch variables to be used in the fetch request. It then passes read_fetch as an argument to the read_users() function. This call will fetch data from the API at the specified URL and display it in the HTML table specified by the resultContainer variable. The function will use default options for the fetch request and will sort the data by date and time before displaying it in the table.</p>
+<h4 id="4cii">
+<a class="anchor" href="#4cii" aria-hidden="true"><span class="octicon octicon-link"></span></a>4c.ii.</h4>
+<p>The add_row() function is called within the read_users() function inside a for loop that iterates over the JSON data returned from the API. The purpose of the function is to add a row to the HTML table for each game returned in the API response.</p>
+
+<p>The add_row() function receives an object called data as its input, which contains the following properties: uidB, resultB, uidR, resultR, and dogame. These properties correspond to the Black Username, Black Result, Red Username, Red Result, and Date &amp; Time columns in the HTML table, respectively.</p>
+
+<p>The first call to add_row() occurs inside the then block of the fetch() call in read_users(). This call is made if the response status is 200 (i.e., successful), and the returned JSON data is sorted by date in descending order. Therefore, this call adds a row to the HTML table for each game in the API response, with the games displayed in descending order by date.</p>
+
+<p>The second call to add_row() occurs inside the catch block of the fetch() call in read_users(). This call is made if there is an error in the fetch() call, such as when access to the server is blocked. In this case, the function adds an error message to the HTML table, which is displayed in a new row.</p>
+
+<h3 id="4c-iii">
+<a class="anchor" href="#4c-iii" aria-hidden="true"><span class="octicon octicon-link"></span></a>4c. iii.</h3>
+<p>The code is fetching data from a backend API using a GET request to the URL https://pythonalflask.tk/api/checkers/checkersList, then sorting the data by date and time (dogame property) in descending order.</p>
+
+<p>The data is then displayed in an HTML table with the id attribute “recentGames” and the tbody element with the id attribute “checkersList”. The table has five columns: “Black Username”, “Black Result”, “Red Username”, “Red Result”, and “Date &amp; Time”.</p>
+
+<p>For each row of data, a new HTML tr element is created with five td elements to display the data in the appropriate columns of the table. The add_row function is called to add each row of data to the HTML table.</p>
+
+<p>Finally, if there is an error fetching or processing the data, an error message is displayed in a single row of the table with the appropriate error message.</p>
+
+  </div><a class="u-url" href="/cs/week%2025/jupyter/2023/02/28/CPT.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/cs/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://mmaxwu.github.io/cs/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/cs/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Max is a student attending Del Norte High School</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
