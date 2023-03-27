@@ -628,6 +628,35 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/lixiwu/Documents/Computer Science/CSP/cs/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 12</span> in <span class="ansi-cyan-fg">&lt;cell line: 38&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lixiwu/Documents/Computer%20Science/CSP/cs/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=34'&gt;35&lt;/a&gt;</span>         except:  # error raised if object not created
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell:/Users/lixiwu/Documents/Computer%20Science/CSP/cs/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=35'&gt;36&lt;/a&gt;</span>             print("Unknown error uid {uid}")
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell:/Users/lixiwu/Documents/Computer%20Science/CSP/cs/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=37'&gt;38&lt;/a&gt;</span> create()
+
+<span class="ansi-green-intense-fg ansi-bold">/Users/lixiwu/Documents/Computer Science/CSP/cs/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 12</span> in <span class="ansi-cyan-fg">create</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/lixiwu/Documents/Computer%20Science/CSP/cs/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> def create():
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/lixiwu/Documents/Computer%20Science/CSP/cs/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=2'&gt;3&lt;/a&gt;</span>     # optimize user time to see if uid exists
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/lixiwu/Documents/Computer%20Science/CSP/cs/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span>     uid = input("Enter your user id:")
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/lixiwu/Documents/Computer%20Science/CSP/cs/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span>     user = find_by_uid(uid)
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/lixiwu/Documents/Computer%20Science/CSP/cs/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=5'&gt;6&lt;/a&gt;</span>     try:
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/lixiwu/Documents/Computer%20Science/CSP/cs/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X14sZmlsZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span>         print("Found\n", user.read())
+
+<span class="ansi-red-fg">NameError</span>: name 'find_by_uid' is not defined</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -692,6 +721,27 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/Users/lixiwu/Documents/Computer Science/CSP/cs/_notebooks/2023-03-13-AP-unit2-4a.ipynb Cell 15</span> in <span class="ansi-cyan-fg">&lt;cell line: 7&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/lixiwu/Documents/Computer%20Science/CSP/cs/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X20sZmlsZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span>     json_ready = [user.read() for user in table] # "List Comprehensions", for each user add user.read() to list
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell:/Users/lixiwu/Documents/Computer%20Science/CSP/cs/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X20sZmlsZQ%3D%3D?line=4'&gt;5&lt;/a&gt;</span>     return json_ready
+<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell:/Users/lixiwu/Documents/Computer%20Science/CSP/cs/_notebooks/2023-03-13-AP-unit2-4a.ipynb#X20sZmlsZQ%3D%3D?line=6'&gt;7&lt;/a&gt;</span> read()
+
+<span class="ansi-red-fg">NameError</span>: name 'read' is not defined</pre>
+</div>
+</div>
+
 </div>
 </div>
 
