@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>DevOPS Hacks | Max Wu</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="DevOPS Hacks" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="AWS Database Quiz" />
+<meta property="og:description" content="AWS Database Quiz" />
+<link rel="canonical" href="https://mmaxwu.github.io/cs/2023/04/26/devops.html" />
+<meta property="og:url" content="https://mmaxwu.github.io/cs/2023/04/26/devops.html" />
+<meta property="og:site_name" content="Max Wu" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-04-26T00:00:00-05:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="DevOPS Hacks" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-04-26T00:00:00-05:00","datePublished":"2023-04-26T00:00:00-05:00","description":"AWS Database Quiz","headline":"DevOPS Hacks","mainEntityOfPage":{"@type":"WebPage","@id":"https://mmaxwu.github.io/cs/2023/04/26/devops.html"},"url":"https://mmaxwu.github.io/cs/2023/04/26/devops.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/cs/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://mmaxwu.github.io/cs/feed.xml" title="Max Wu" /><link rel="shortcut icon" type="image/x-icon" href="/cs/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/cs/">Max Wu</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/cs/CollegeboardNotes/">College Board Notes</a><a class="page-link" href="/cs/about/">About Me</a><a class="page-link" href="/cs/api/overview">API</a><a class="page-link" href="/cs/javascript/">Javascript</a><a class="page-link" href="/cs/search/">Search</a><a class="page-link" href="/cs/categories/">Tags</a><a class="page-link" href="/cs/vocab/">Vocab</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">DevOPS Hacks</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2023-04-26T00:00:00-05:00" itemprop="datePublished">
+        Apr 26, 2023
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      8 min read
+    
+</span></p>
+
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h3"><a href="#aws-database-quiz">AWS Database Quiz</a></li>
+<li class="toc-entry toc-h3"><a href="#duck-dns">Duck DNS</a></li>
+<li class="toc-entry toc-h3"><a href="#frq">FRQ</a></li>
+<li class="toc-entry toc-h3"><a href="#reflection">Reflection</a></li>
+<li class="toc-entry toc-h3"><a href="#hacks-for-kasm">HACKS FOR KASM</a></li>
+<li class="toc-entry toc-h3"><a href="#alternatives-to-certbot">Alternatives to Certbot</a></li>
+<li class="toc-entry toc-h3"><a href="#certbot-hacks">Certbot HACKS</a></li>
+<li class="toc-entry toc-h3"><a href="#sqlite-vs-aws-alternate-databases">SQLite vs AWS alternate databases</a></li>
+<li class="toc-entry toc-h3"><a href="#ec2-aws-hacks">EC2 AWS HACKS</a></li>
+<li class="toc-entry toc-h3"><a href="#venn-diagram">Venn Diagram</a></li>
+<li class="toc-entry toc-h3"><a href="#duck-dns-hacks">Duck DNS HACKS</a></li>
+<li class="toc-entry toc-h3"><a href="#certbot">Certbot</a></li>
+</ul><h3 id="aws-database-quiz">
+<a class="anchor" href="#aws-database-quiz" aria-hidden="true"><span class="octicon octicon-link"></span></a>AWS Database Quiz</h3>
+
+<p>What is the main difference between relational and non-relational databases?</p>
+
+<p>A. Relational databases are only used for structured data, while non-relational databases are only used for unstructured data.</p>
+
+<p>B. Relational databases can easily handle high data volumes, while non-relational databases cannot.</p>
+
+<p><mark>C. Relational databases are based on tables and use SQL, while non-relational databases are based on collections and use JSON-like documents.</mark></p>
+
+<p>D. Relational databases are more expensive than non-relational databases.</p>
+
+<p>Which AWS database service is best suited for applications that require low-latency speed?</p>
+
+<p><mark>A. Amazon ElastiCache</mark></p>
+
+<p>B. Amazon Neptune</p>
+
+<p>C. Amazon DocumentDB</p>
+
+<p>D. Amazon RDS</p>
+
+<p>What is the purpose of the code example provided in the lesson?</p>
+
+<p>A. To demonstrate how to create a table in Amazon Aurora.</p>
+
+<p>B. To show how to query data from a DynamoDB table.</p>
+
+<p><mark>C. To provide an example of how to connect to a database instance in RDS using Python.</mark></p>
+
+<p>D. To showcase how to insert data into a MySQL table.</p>
+
+<h3 id="duck-dns">
+<a class="anchor" href="#duck-dns" aria-hidden="true"><span class="octicon octicon-link"></span></a>Duck DNS</h3>
+<p>The purpose of DuckDNS is to provide a free dynamic DNS service that allows users to map a hostname to a dynamic IP address. It is a good alternative to services like Freenom, which can have limitations and restrictions on their free offerings. While DNS is a critical infrastructure for the internet, dynamic DNS services like DuckDNS are useful for users who need to access their devices or services remotely but have a dynamic IP address that changes frequently. They allow users to access their resources using a hostname that remains constant even if the IP address changes, which is why I prefer DuckDNS over DNS</p>
+
+<h3 id="frq">
+<a class="anchor" href="#frq" aria-hidden="true"><span class="octicon octicon-link"></span></a>FRQ</h3>
+<p><mark>Question 1:</mark> How does AWS Work?<br>
+AWS provides a global infrastructure of data centers and networking capabilities to support the deployment of applications and services.</p>
+
+<p><mark>Question 2:</mark> How is AWS useful for projects?<br>
+AWS is useful for projects because it provides a flexible, scalable, cost-effective, reliable, and secure infrastructure that can support a wide range of applications and services.</p>
+
+<p><mark>Question 3:</mark> How does DuckDNS Work?<br>
+DuckDNS is a free dynamic DNS service that allows users to map a domain name to their dynamic IP address. Users sign up for an account on the DuckDNS website and choose a domain name. They then install a client application on their home network that updates the IP address associated with the domain name whenever it changes.</p>
+
+<p><mark>Question 4:</mark> How is Duck DNS useful for projects?<br>
+Duck DNS is useful for projects that require remote access, as it allows users to access the project using a stable domain name without needing to know the current IP address. It can also be integrated with other services such as IFTTT, and can be used with SSL/TLS certificates to provide secure access to the project. Finally, Duck DNS is a cost-effective solution for small-scale projects with limited budgets.</p>
+
+<h3 id="reflection">
+<a class="anchor" href="#reflection" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reflection</h3>
+<p>DuckDNS and AWS are two tools that can be extremely useful for different types of projects. DuckDNS can be particularly useful for small-scale projects that require remote access or integration with other services, and for projects that have limited budgets. On the other hand, AWS can be a powerful platform for large-scale projects that require high availability, scalability, and security.</p>
+
+<p>Both DuckDNS and AWS provide a range of features and services that can be tailored to meet the specific needs of different projects. DuckDNS is a free service that can be used to map a domain name to a dynamic IP address, while AWS provides a wide range of services such as databases, storage, compute, and networking.</p>
+
+<p>AWS is particularly useful for projects that require high levels of security and reliability, as it provides a range of security and compliance certifications and a global network of data centers. On the other hand, DuckDNS provides a simple and easy-to-use solution for users who need to access their home network remotely.</p>
+
+<p>Overall, the choice between DuckDNS and AWS will depend on the specific needs and requirements of each project. While DuckDNS may be a suitable solution for small-scale projects with limited budgets, AWS may be a better fit for larger projects that require high availability, scalability, and security.</p>
+
+<h3 id="hacks-for-kasm">
+<a class="anchor" href="#hacks-for-kasm" aria-hidden="true"><span class="octicon octicon-link"></span></a>HACKS FOR KASM</h3>
+<ol>
+  <li>Virtual desktops such as KASM allow users to access a secure and isolated computing environment from anywhere with an internet connection. This can be particularly useful for organizations that need to provide remote access to sensitive information or applications, while maintaining strict security controls. In the context of an AP CSP environment, virtual desktops can be used to provide students with access to specialized software or programming tools that may not be available on their personal devices, while ensuring that the environment is secure and easily managed by the instructor.</li>
+  <li><img src="/cs/images/kasm.png" alt=""></li>
+</ol>
+
+<h3 id="alternatives-to-certbot">
+<a class="anchor" href="#alternatives-to-certbot" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alternatives to Certbot</h3>
+<p>What is Lego?</p>
+
+<p>A) A popular building block toy <mark>B) An open-source ACME client for obtaining SSL/TLS certificates</mark> C) A web server software D) A DNS provider</p>
+
+<p>What challenges does Lego support for domain validation?</p>
+
+<p>A) HTTP-02 and DNS-03 <mark>B) HTTP-01 and DNS-01</mark> C) HTTPS-01 and DNS-01 D) TLS-01 and DNS-02</p>
+
+<p>What features does Lego provide for managing SSL/TLS certificates?</p>
+
+<p>A) Integration with popular web servers and load balancers B) Advanced configuration options, such as custom DNS providers and HTTP challenge servers C) Support for multiple domains in a single certificate and wildcard certificates <mark>D) All of the above</mark></p>
+
+<p>How does Lego ensure that SSL/TLS certificates are always up-to-date?</p>
+
+<p>A) By sending reminders to the domain owner’s email <mark>B) By automatically renewing the certificates before they expire</mark> C) By generating new private keys and certificate signing requests every month D) By providing manual renewal options only</p>
+
+<h3 id="certbot-hacks">
+<a class="anchor" href="#certbot-hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Certbot HACKS</h3>
+<p>OpenSSL and LibreSSL are two popular open-source cryptographic libraries used to implement the Secure Sockets Layer (SSL) and Transport Layer Security (TLS) protocols. While both libraries are designed to provide secure and efficient encryption, there are some differences in their security features.</p>
+
+<p>OpenSSL is known for its broad support of different cryptographic algorithms and protocols, including SSL/TLS, public key cryptography, and message digest algorithms. However, it has been criticized for its complex codebase and the occurrence of several high-profile vulnerabilities in recent years, such as the Heartbleed and CCS injection vulnerabilities.</p>
+
+<p>In contrast, LibreSSL is a fork of OpenSSL that was created with the goal of simplifying and cleaning up OpenSSL’s codebase to improve security and eliminate potential vulnerabilities. It includes several security enhancements, such as support for more secure cryptographic algorithms, a simpler and more secure memory allocator, and a proactive security audit process. LibreSSL is also designed to be more portable and compatible with a wider range of platforms than OpenSSL.</p>
+
+<p>Despite these security improvements, both OpenSSL and LibreSSL have still been subject to vulnerabilities in recent years. For example, in 2021, OpenSSL disclosed a high-severity vulnerability that could allow attackers to execute arbitrary code on a victim’s machine. Similarly, in 2020, LibreSSL disclosed a vulnerability that could allow attackers to remotely crash the library.</p>
+
+<p>In conclusion, both OpenSSL and LibreSSL are powerful and widely-used cryptographic libraries that provide secure encryption and authentication. However, while LibreSSL includes several security enhancements and aims to be more secure than OpenSSL, both libraries have been subject to vulnerabilities in recent years and require constant updates and maintenance to ensure their continued security.</p>
+
+<h3 id="sqlite-vs-aws-alternate-databases">
+<a class="anchor" href="#sqlite-vs-aws-alternate-databases" aria-hidden="true"><span class="octicon octicon-link"></span></a>SQLite vs AWS alternate databases</h3>
+
+<p>Which of the following is not an AWS database option?</p>
+
+<p>A. Amazon RDS</p>
+
+<p>B. Amazon Neptune</p>
+
+<p><mark>C. SQLite</mark></p>
+
+<p>D. Amazon DynamoDB</p>
+
+<p>Which of the following is a file-based, lightweight RDBMS?</p>
+
+<p>A. Amazon RDS</p>
+
+<p>B. Amazon Neptune</p>
+
+<p>C Amazon DynamoDB</p>
+
+<p><mark>D. SQLite</mark></p>
+
+<p>Which AWS service enables you to store and query highly connected datasets?</p>
+
+<p>A. Amazon Relational Database Service (RDS)</p>
+
+<p>B. Amazon DynamoDB</p>
+
+<p><mark>C. Amazon Neptune</mark></p>
+
+<p>D. Amazon DocumentDB</p>
+
+<h3 id="ec2-aws-hacks">
+<a class="anchor" href="#ec2-aws-hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>EC2 AWS HACKS</h3>
+<p>Are there any outdated Nginx/Docker functionalities to address?</p>
+
+<p>Yes, there have been some outdated functionalities in Nginx and Docker that have been addressed in recent updates. For example, in Nginx, support for SSLv2 and SSLv3 protocols have been removed due to security vulnerabilities. Docker also regularly releases updates to address security issues and improve functionality. It’s important to stay up to date with the latest releases to ensure security and optimal performance.</p>
+
+<h3 id="venn-diagram">
+<a class="anchor" href="#venn-diagram" aria-hidden="true"><span class="octicon octicon-link"></span></a>Venn Diagram</h3>
+<p><img src="/cs/images/venn.png" alt=""></p>
+
+<h3 id="duck-dns-hacks">
+<a class="anchor" href="#duck-dns-hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Duck DNS HACKS</h3>
+<p><img src="/cs/images/proscons.png" alt="">
+Reflecting on the questions about DNS and DuckDNS, I realize the importance of having a domain name system in place to connect to devices with dynamic IP addresses. DNS simplifies the process of accessing devices on a network and allows for remote access from anywhere in the world.</p>
+
+<p>DuckDNS is a popular Dynamic DNS service provider that offers a unique solution to this problem. It allows users to assign a custom domain name to a device with a changing IP address, making it easier to access from anywhere in the world.</p>
+
+<p>What makes DuckDNS unique is that it is a free service, making it accessible to users on a tight budget. Additionally, it offers support for a wide range of platforms, including Linux, Windows, macOS, Android, iOS, and routers, making it a versatile tool for developers and individuals alike.</p>
+
+<p>DuckDNS can be incredibly useful for our projects, especially for remote access to devices with dynamic IP addresses. By using a custom domain name, we can simplify the process of connecting to devices and reduce the risk of unauthorized access.</p>
+
+<p>Setting up DuckDNS is a simple process that involves registering for an account, creating a subdomain, and configuring the service on the device. Once set up, DuckDNS automatically updates the IP address of the device, allowing for easy access from anywhere in the world.</p>
+
+<p>Overall, DNS and DuckDNS provide a crucial solution to the problem of accessing devices with dynamic IP addresses. By simplifying the process of connecting to devices remotely, we can reduce the complexity of our projects and increase our productivity.</p>
+
+<h3 id="certbot">
+<a class="anchor" href="#certbot" aria-hidden="true"><span class="octicon octicon-link"></span></a>Certbot</h3>
+<p><img src="/cs/images/certbot.png" alt=""></p>
+
+  </div><a class="u-url" href="/cs/2023/04/26/devops.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/cs/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="https://mmaxwu.github.io/cs/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/cs/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>Max is a student attending Del Norte High School</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
