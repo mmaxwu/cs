@@ -73,4 +73,4 @@ Boolean operations are mathematical operations on Boolean values that produce a 
 3. ![]({{site.baseurl}}/images/khanacademy.png)
 
 ## Github Pages Hacks
-GitLab is a hosting service website that offers source code management and various DevOps-related features, which sets it apart from Github. GitLab has an integrated continuous integration and deployment (CI/CD) functionality that enables users to automate the building, testing, and deployment of their applications. This unique feature allows teams to enhance the quality and reliability of their software while saving time and resources.
+GitLab is a hosting service website that offers source code management and various DevOps-related features, which sets it apart from Github. GitLab has an integrated continuous integration and deployment (CI/CD) functionality that enables users to automate the building, testing, and deployment of their applications. This unique feature allows teams to enhance the quality and reliability of their software while saving time and resources. 
