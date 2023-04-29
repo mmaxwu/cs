@@ -56,9 +56,21 @@ Based on what you find online, fill out the tables below for subtracting, multip
 
 Choose ONE (0.9 for doing one):
 
-- Create buttons similar to the ones above that allow you to **subtract** binary numbers and returns the desired result in both binary and decimal
+- Create buttons similar to the ones above that allow you to subtract binary numbers and returns the desired result in both binary and decimal
 
-In the above button, I was able to create a button that **subtracts** binary numbers and returns that desired result in both binary and decimal.
+In the above button, I was able to create a button that subtracts binary numbers and returns that desired result in both binary and decimal.
 
 ## Binary Logic
 ![]({{site.baseurl}}/images/binarylogic.png)
+
+## Logic Gates
+1. How can logic gates be used to execute basic computer functions?
+Logic gates are the basic building blocks of digital circuits, and they can be used to execute basic computer functions. Different combinations of logic gates can be used to create more complex circuits that can perform a wide range of functions.
+
+2. What is the difference between boolean operations and logic gates?
+Boolean operations are mathematical operations on Boolean values that produce a Boolean result, while logic gates are physical or electronic devices that implement Boolean functions and are used to perform logical operations on binary inputs.
+
+3. ![]({{site.baseurl}}/images/khanacademy.png)
+
+## Github Pages Hacks
+GitLab is a hosting service website that offers source code management and various DevOps-related features, which sets it apart from Github. GitLab has an integrated continuous integration and deployment (CI/CD) functionality that enables users to automate the building, testing, and deployment of their applications. This unique feature allows teams to enhance the quality and reliability of their software while saving time and resources.
