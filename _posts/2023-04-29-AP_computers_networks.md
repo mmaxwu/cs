@@ -13,7 +13,7 @@ description: Add Definitions from Unit 4 Computer Systems and Networks
 > As we have learned, a computer needs aa program to do something smart.  The sequence of a program initiates a series of actions with the computers Central Processing Unit (CPU). This component is essentially a binary machine focussing on program instructions provided.  The CPU retrieives and stores the data it acts upon in Random Access Memory (RAM). Between the CPU, RAM, and Storage Devices a computer can work with many programs and large amounts of data.
 
 List specification of your Computer, or Computers if working as Pair/Trio
-- Processor GHz: M1 Chip
+- Processor GHz: Intel Chip
 - Memory in GB: 8 GB
 - Storage in GB: 245.11 GB
 - OS: Ventura 13.0.1
@@ -30,9 +30,9 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 - Inspect Running Code: This refers to the process of examining the code that is currently executing on your computer to troubleshoot or debug issues.
 - Inspect Variables: This refers to the process of examining the variables, or named storage locations, in a program's code to understand how they are being used and how they are affecting the program's behavior.
 
-![Usage of Computer]()
+![]({{site.baseurl}}/images/diagram1.png)
 
-![Computer Hardware]()
+
 
 
 ### The Internet
@@ -68,7 +68,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 6. F
 7. T
 
-![True or False]()
+![]({{site.baseurl}}/images/TF.png)
 
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
@@ -88,14 +88,11 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highlight vocabulary by illustration. The below illustration have some ideas
 
-![Internet]()
 
 Important Reference
 
-![Ref]()
 
-![Full Stack]()
-
+![]({{site.baseurl}}/images/fullstack.png)
 
 - Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
 
@@ -128,14 +125,14 @@ The "network" layer is responsible for ***routing data packets between networks*
 
 - Complete the network activity, summarize your understanding of fault tolerance.
 
-![Full Stack]()
+![Full Stack](https://cdn.discordapp.com/attachments/1068416415251570689/1101987386591817878/Screenshot_2023-04-29_at_2.44.20_PM.png)
 
 - Slow
 - fewer resources
 - if one path goes down, failure causes major problem
 
 
-![Full Stack]()
+![Full Stack](https://cdn.discordapp.com/attachments/1068416415251570689/1101987430397124668/Screenshot_2023-04-29_at_2.44.34_PM.png)
 
 - each device can communicate directly w/ each other, faster
 - nots of resources
