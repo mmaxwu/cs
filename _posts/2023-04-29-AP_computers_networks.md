@@ -30,9 +30,9 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 - Inspect Running Code: This refers to the process of examining the code that is currently executing on your computer to troubleshoot or debug issues.
 - Inspect Variables: This refers to the process of examining the variables, or named storage locations, in a program's code to understand how they are being used and how they are affecting the program's behavior.
 
-![Usage of Computer](https://cdn.discordapp.com/attachments/1068416415251570689/1101982437678002237/Screenshot_2023-04-29_at_2.24.39_PM.png)
+![Usage of Computer]()
 
-![Computer Hardware]({{site.baseurl}}/images/cpu.jpeg)
+![Computer Hardware]()
 
 
 ### The Internet
@@ -68,7 +68,7 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 6. F
 7. T
 
-![True or False](https://cdn.discordapp.com/attachments/1068416415251570689/1101983803876065380/Screenshot_2023-04-29_at_2.30.07_PM.png)
+![True or False]()
 
 - Essential Knowledge
     - The internet is a computer network consisting of interconnected networks that use standardized, open (nonproprierary) communication protocols.
@@ -88,13 +88,13 @@ Define or describe usage of Computer using Computer Programs. Pictures are prefe
 
 - Go over AP videos, vocabulary, and essential knowledge.  Draw a diagram showing the internet and its many levels. A preferred diagram would using your knowledge of frontend, backend, deployment, etc.  Picture would highlight vocabulary by illustration. The below illustration have some ideas
 
-![Internet](https://cdn.discordapp.com/attachments/1068416415251570689/1101987034983321671/Screenshot_2023-04-29_at_2.42.58_PM.png)
+![Internet]()
 
 Important Reference
 
-![Ref](https://cdn.discordapp.com/attachments/1068416415251570689/1101987864889278494/Screenshot_2023-04-29_at_2.46.17_PM.png)
+![Ref]()
 
-![Full Stack]({{site.baseurl}}/images/fullstack.png)
+![Full Stack]()
 
 
 - Often we draw pictures of machines communicating over the Internet with arrows.  However, the real communication goes through protocol layers and the machine and then is trasported of the network.   For College Board and future Computer Knowledge you should become familiar with the following ...
@@ -128,14 +128,14 @@ The "network" layer is responsible for ***routing data packets between networks*
 
 - Complete the network activity, summarize your understanding of fault tolerance.
 
-![Full Stack](https://cdn.discordapp.com/attachments/1068416415251570689/1101987386591817878/Screenshot_2023-04-29_at_2.44.20_PM.png)
+![Full Stack]()
 
 - Slow
 - fewer resources
 - if one path goes down, failure causes major problem
 
 
-![Full Stack](https://cdn.discordapp.com/attachments/1068416415251570689/1101987430397124668/Screenshot_2023-04-29_at_2.44.34_PM.png)
+![Full Stack]()
 
 - each device can communicate directly w/ each other, faster
 - nots of resources
