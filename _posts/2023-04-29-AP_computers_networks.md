@@ -125,14 +125,12 @@ The "network" layer is responsible for ***routing data packets between networks*
 
 - Complete the network activity, summarize your understanding of fault tolerance.
 
-![Full Stack](https://cdn.discordapp.com/attachments/1068416415251570689/1101987386591817878/Screenshot_2023-04-29_at_2.44.20_PM.png)
 
 - Slow
 - fewer resources
 - if one path goes down, failure causes major problem
 
 
-![Full Stack](https://cdn.discordapp.com/attachments/1068416415251570689/1101987430397124668/Screenshot_2023-04-29_at_2.44.34_PM.png)
 
 - each device can communicate directly w/ each other, faster
 - nots of resources
